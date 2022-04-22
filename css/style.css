@@ -1,0 +1,690 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Faustina:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Faustina:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  position: absolute;
+  top: -9999px;
+  opacity: 0;
+}
+
+#header {
+  width: 100%;
+}
+#header .inner {
+  width: 1180px;
+  height: 120px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 30px;
+}
+#header .inner a {
+  display: flex;
+  justify-content: center;
+  font: bold 60px/1 "DM Serif Display";
+  color: #000;
+  overflow: hidden;
+}
+#header .inner .menu #gnb {
+  position: absolute;
+  left: 0%;
+  bottom: 0;
+}
+#header .inner .menu #gnb li {
+  float: left;
+}
+#header .inner .menu #gnb li a {
+  display: block;
+  padding: 0px 40px;
+  font: bold 20px/1 "Faustina";
+  color: #000;
+  position: relative;
+  left: 120px;
+  top: 30px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+#header .inner .menu #gnb li a:hover {
+  transform: scale(1.2);
+  text-shadow: 1px 5px 10px #8C8C8C;
+}
+#header .inner .menu .util {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+#header .inner .menu .util li {
+  float: left;
+}
+#header .inner .menu .util li a {
+  position: relative;
+  padding: 8px;
+  font: 15px/1 "apple";
+  color: #000;
+  transition: 0.5s;
+}
+#header .inner .menu .util li a:hover {
+  transform: scale(1.2);
+}
+
+#visure {
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  position: relative;
+  top: 70px;
+  margin-bottom: 150px;
+}
+#visure video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#best {
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+}
+#best .inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+}
+#best .inner h1 {
+  font: bold 35px/1 "DM Serif Display";
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+#best .inner .wrap {
+  width: 100%;
+}
+#best .inner .wrap article {
+  width: 280px;
+  margin-bottom: 100px;
+  margin-right: 20px;
+  float: left;
+  border: 1px solid #aaa;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+#best .inner .wrap article:last-of-type {
+  margin-right: 0px;
+}
+#best .inner .wrap article .pic {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+#best .inner .wrap article .pic img {
+  width: 100%;
+  height: 100%;
+  background-size: auto;
+  background: #0D0D0D;
+  transition: 1s;
+}
+#best .inner .wrap article:hover .text {
+  opacity: 1;
+}
+#best .inner .wrap article:hover img {
+  opacity: 0.4;
+}
+#best .inner .wrap article .text {
+  height: 1px;
+  bottom: 320px;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  font: 15px/28px "Faustina";
+  opacity: 0;
+  transition: 1s;
+}
+#best .inner .wrap article .pic_text {
+  display: block;
+}
+#best .inner .wrap article .pic_text p {
+  text-align: center;
+}
+#best .inner .wrap article .pic_text .item_name {
+  font: bold 22px/1 "Faustina";
+  color: #D9AF8B;
+  margin-bottom: 20px;
+}
+#best .inner .wrap article .pic_text .item_case {
+  font: 15px/1 "Faustina";
+  color: #D9AF8B;
+  margin-bottom: 20px;
+}
+#best .inner .wrap article .pic_text a {
+  display: block;
+  width: 200px;
+  height: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #000;
+  font: 15px/28px "Faustina";
+  color: #D9AF8B;
+  text-align: center;
+  position: relative;
+  left: 13%;
+  transition: 0.5s;
+}
+#best .inner .wrap article .pic_text a:hover {
+  transform: scale(1.1);
+}
+
+#story {
+  width: 100%;
+  height: 1200px;
+  overflow: hidden;
+}
+#story .inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+  top: 50px;
+}
+#story .inner h1 {
+  display: flex;
+  justify-content: center;
+  font: bold 30px/1px "DM Serif Display";
+}
+#story .inner div:nth-of-type(1) {
+  height: 450px;
+  margin-top: 30px;
+  background: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+#story .inner div:nth-of-type(1) img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#story .inner div:nth-of-type(1) h2 {
+  text-align: center;
+  font: bold 50px/1 "DM Serif Display";
+  color: #fff;
+  position: relative;
+  top: -400px;
+  transition: 1s;
+}
+#story .inner div:nth-of-type(1) p {
+  padding: 0px 200px;
+  text-align: center;
+  font: bold 20px/30px "Faustina";
+  color: #fff;
+  position: relative;
+  top: -350px;
+  transition: 1s;
+}
+#story .inner div:nth-of-type(1) a {
+  display: block;
+  width: 200px;
+  height: 30px;
+  border: 1px solid #fff;
+  font: 15px/28px "Faustina";
+  color: #fff;
+  text-align: center;
+  position: relative;
+  left: 40%;
+  top: -60%;
+  transition: 1s;
+}
+#story .inner div:nth-of-type(1) img {
+  width: 100%;
+  transition: 1s;
+}
+#story .inner div:nth-of-type(1):hover img {
+  opacity: 0.3;
+}
+#story .inner div:hover h2 {
+  color: #000;
+}
+#story .inner div:hover p {
+  color: #000;
+}
+#story .inner div:hover a {
+  color: #000;
+  border: 1px solid #000;
+}
+#story .inner div:nth-of-type(2) {
+  width: 50%;
+  height: 500px;
+  margin-top: 40px;
+  padding: 10px;
+  background: #fff;
+  text-align: center;
+  position: relative;
+  left: -10px;
+}
+#story .inner div:nth-of-type(2) h2 {
+  font: bold 35px/1 "DM Serif Display";
+  position: relative;
+  top: -75%;
+}
+#story .inner div:nth-of-type(2) p {
+  position: relative;
+  top: -70%;
+  left: -99%;
+  font: bold 22px/30px "Faustina";
+  color: #000;
+  padding: 0px 30px;
+  opacity: 0;
+  transition: 1s;
+}
+#story .inner div:nth-of-type(2) a {
+  display: block;
+  width: 200px;
+  height: 30px;
+  border: 1px solid #000;
+  font: 15px/28px "Faustina";
+  color: #000;
+  text-align: center;
+  position: relative;
+  left: 30%;
+  top: -60%;
+  margin-bottom: 20px;
+  transition: 1s;
+}
+#story .inner div:nth-of-type(2) img {
+  width: 100%;
+  transition: 1s;
+}
+#story .inner div:nth-of-type(2):hover img {
+  opacity: 0.3;
+}
+#story .inner div:nth-of-type(2):hover a {
+  transform: scale(1.1);
+}
+#story .inner div:nth-of-type(2):hover p {
+  top: -70%;
+  left: 0;
+  opacity: 1;
+}
+#story .inner div:nth-of-type(3) {
+  width: 50%;
+  height: 500px;
+  padding: 10px;
+  background: #fff;
+  position: absolute;
+  top: 520px;
+  right: -10px;
+  text-align: center;
+}
+#story .inner div:nth-of-type(3) h2 {
+  font: bold 35px/1 "DM Serif Display";
+  position: relative;
+  top: -75%;
+}
+#story .inner div:nth-of-type(3) p {
+  position: relative;
+  top: -70%;
+  right: -99%;
+  font: bold 22px/1 "Faustina";
+  color: #000;
+  padding: 0px 30px;
+  opacity: 0;
+  transition: 1s;
+}
+#story .inner div:nth-of-type(3) a {
+  display: block;
+  width: 200px;
+  height: 30px;
+  border: 1px solid #000;
+  font: 15px/28px "Faustina";
+  color: #000;
+  text-align: center;
+  position: relative;
+  left: 30%;
+  top: -55%;
+  margin-bottom: 20px;
+  transition: 1s;
+}
+#story .inner div:nth-of-type(3) img {
+  width: 100%;
+  transition: 1s;
+}
+#story .inner div:nth-of-type(3):hover a {
+  transform: scale(1.1);
+}
+#story .inner div:nth-of-type(3):hover img {
+  opacity: 0.3;
+}
+#story .inner div:hover p {
+  right: 0;
+  opacity: 1;
+}
+
+#banner {
+  width: 100%;
+  height: 300px;
+  background: #D9AF8B;
+  margin-bottom: 100px;
+  margin-top: 30px;
+  padding: 20px;
+}
+#banner:hover h1 {
+  opacity: 1;
+}
+#banner:hover p {
+  opacity: 1;
+}
+#banner h1 {
+  display: block;
+  text-align: center;
+  font: bold 50px/1 "DM Serif Display";
+  color: #fff;
+  opacity: 0;
+  transition: 1s;
+}
+#banner p {
+  padding: 0px 10%;
+  text-align: center;
+  font: 20px/2 "Faustina";
+  color: #fff;
+  opacity: 0;
+  transition: 1s;
+}
+
+#new_item {
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+}
+#new_item .inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+}
+#new_item .inner h1 {
+  font: bold 35px/1 "DM Serif Display";
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+#new_item .inner .wrap {
+  width: 100%;
+}
+#new_item .inner .wrap article {
+  width: 280px;
+  margin-bottom: 100px;
+  margin-right: 20px;
+  float: left;
+  border: 1px solid #aaa;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+#new_item .inner .wrap article:last-of-type {
+  margin-right: 0px;
+}
+#new_item .inner .wrap article .pic {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+#new_item .inner .wrap article .pic img {
+  width: 100%;
+  height: 100%;
+  background-size: auto;
+  background: #0D0D0D;
+  transition: 1s;
+}
+#new_item .inner .wrap article:hover .text {
+  opacity: 1;
+}
+#new_item .inner .wrap article:hover img {
+  opacity: 0.4;
+}
+#new_item .inner .wrap article .text {
+  height: 1px;
+  bottom: 320px;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  font: 15px/28px "Faustina";
+  opacity: 0;
+  transition: 1s;
+}
+#new_item .inner .wrap article .pic_text {
+  display: block;
+}
+#new_item .inner .wrap article .pic_text p {
+  text-align: center;
+}
+#new_item .inner .wrap article .pic_text .item_name {
+  font: bold 22px/1 "Faustina";
+  color: #D9AF8B;
+  margin-bottom: 20px;
+}
+#new_item .inner .wrap article .pic_text .item_case {
+  font: 15px/1 "Faustina";
+  color: #D9AF8B;
+  margin-bottom: 20px;
+}
+#new_item .inner .wrap article .pic_text a {
+  display: block;
+  width: 200px;
+  height: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #000;
+  font: 15px/28px "Faustina";
+  color: #D9AF8B;
+  text-align: center;
+  position: relative;
+  left: 13%;
+  transition: 0.5s;
+}
+#new_item .inner .wrap article .pic_text a:hover {
+  transform: scale(1.1);
+}
+
+#direct {
+  width: 100%;
+  height: 1450px;
+  overflow: hidden;
+}
+#direct .inner {
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  top: 50px;
+}
+#direct .inner article {
+  width: 48%;
+  height: 500px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  float: left;
+}
+#direct .inner h1 {
+  font: bold 30px/1 "DM Serif Display";
+  position: relative;
+  top: 100px;
+}
+#direct .inner p {
+  font: 20px/1 "Faustina";
+  position: relative;
+  top: 110px;
+}
+#direct .inner a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 40px;
+  font: bold 20px/1 "Faustina";
+  border: 1px solid #000;
+  position: relative;
+  top: 150px;
+  left: 20%;
+}
+#direct .inner .direct_pic {
+  width: 45%;
+  height: 600px;
+  position: relative;
+}
+#direct .inner .direct_pic img {
+  width: 100%;
+  height: 100%;
+}
+
+#greeting {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#greeting .inner {
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+#greeting .inner h1 {
+  display: flex;
+  justify-content: center;
+  font: bold 70px/1 "DM Serif Display";
+}
+#greeting .inner h4 {
+  font: 14px/1 "DM Serif Display";
+}
+#greeting .inner p {
+  font: 20px/30px "Faustina";
+  margin-top: 20px;
+}
+#greeting .inner .sign {
+  width: 400px;
+  height: 150px;
+}
+
+#saying {
+  width: 100%;
+  height: 400px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#saying .inner h1 {
+  text-align: center;
+}
+#saying .inner .swiper {
+  width: 100%;
+  height: 350px;
+}
+#saying .inner .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#saying .inner .swiper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#footer {
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px solid #000;
+}
+#footer .inner {
+  width: 1180px;
+  height: 300px;
+  margin: 0 auto;
+}
+#footer .inner::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#footer .inner ul {
+  float: left;
+  margin-top: 30px;
+  margin-left: 150px;
+}
+#footer .inner ul h1 {
+  font: bold 20px/1px "DM Serif Display";
+  margin-bottom: 20px;
+}
+#footer .inner ul a {
+  font: 18px/30px "Faustina";
+  color: #000;
+}
+#footer .inner ul:nth-of-type(3) {
+  display: block;
+  position: relative;
+  float: right;
+  left: 27%;
+  font-size: 40px;
+}
+#footer .inner address {
+  float: left;
+  position: relative;
+  top: 90px;
+  left: -350px;
+}
+#footer .inner .copy {
+  position: relative;
+  top: 190px;
+  left: -150px;
+}
+#footer .inner .contact {
+  position: relative;
+  left: -75%;
+  top: 80px;
+}
+#footer .inner .contact h2 {
+  font: bold 30px/1 "DM Serif Display";
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+#footer .inner .contact p {
+  font: 20px/1 "Faustina";
+}
+
+a h1 {
+  height: 100%;
+  font: bold 60px/1 "DM Serif Display";
+  color: #000;
+  text-align: center;
+  margin-top: 100px;
+}
+a main {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+a main article {
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  top: 25%;
+  left: 0;
+}
+a main article img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=style.css.map */

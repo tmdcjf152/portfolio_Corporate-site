@@ -1,0 +1,672 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Faustina:wght@600&display=swap");
+// 'DM Serif Display';
+// 'Faustina';
+#header {
+	width: 100%;
+	.inner {
+		width: 1180px;
+		height: 120px;
+		margin: 0 auto;
+		position: relative;
+		padding-top: 30px;
+		a {
+			display: flex;
+			justify-content: center;
+			font: bold 60px/1 "DM Serif Display";
+
+			color: #000;
+			overflow: hidden;
+		}
+		.menu {
+			#gnb {
+				position: absolute;
+				left: 0%;
+				bottom: 0;
+				li {
+					float: left;
+					a {
+						display: block;
+						padding: 0px 40px;
+						font: bold 20px/1 "Faustina";
+						color: #000;
+						position: relative;
+						left: 120px;
+						top: 30px;
+						overflow: hidden;
+						transition: 0.5s;
+						&:hover {
+							transform: scale(1.2);
+							text-shadow: 1px 5px 10px $gray;
+						}
+					}
+				}
+			}
+			.util {
+				position: absolute;
+				right: 10px;
+				top: 15px;
+				li {
+					float: left;
+					a {
+						position: relative;
+						padding: 8px;
+						font: 15px/1 "apple";
+						color: #000;
+						transition: 0.5s;
+						&:hover {
+							transform: scale(1.2);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#visure {
+	width: 100%;
+	height: 700px;
+	overflow: hidden;
+	position: relative;
+	top: 70px;
+	margin-bottom: 150px;
+	video {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+#best {
+	width: 100%;
+	height: 700px;
+	overflow: hidden;
+	.inner {
+		width: 1180px;
+		margin: 0 auto;
+		position: relative;
+
+		h1 {
+			font: bold 35px/1 "DM Serif Display";
+			text-decoration: underline;
+			display: flex;
+			justify-content: center;
+			margin-bottom: 50px;
+		}
+		.wrap {
+			width: 100%;
+			article {
+				width: 280px;
+				margin-bottom: 100px;
+				margin-right: 20px;
+				float: left;
+				border: 1px solid #aaa;
+				box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+
+				&:last-of-type {
+					margin-right: 0px;
+				}
+				.pic {
+					width: 100%;
+					height: 350px;
+					overflow: hidden;
+					img {
+						width: 100%;
+						height: 100%;
+						background-size: auto;
+						background: $black;
+						transition: 1s;
+					}
+				}
+				&:hover .text {
+					opacity: 1;
+				}
+				&:hover img {
+					opacity: 0.4;
+				}
+				.text {
+					height: 1px;
+					bottom: 320px;
+					padding: 10px;
+					position: relative;
+					text-align: center;
+					font: 15px/28px "Faustina";
+					opacity: 0;
+					transition: 1s;
+				}
+				.pic_text {
+					display: block;
+					p {
+						text-align: center;
+					}
+					.item_name {
+						font: bold 22px/1 "Faustina";
+						color: $beige;
+						margin-bottom: 20px;
+					}
+					.item_case {
+						font: 15px/1 "Faustina";
+						color: $beige;
+						margin-bottom: 20px;
+					}
+					a {
+						display: block;
+						width: 200px;
+						height: 30px;
+						margin-bottom: 30px;
+						border: 1px solid #000;
+						font: 15px/28px "Faustina";
+						color: $beige;
+						text-align: center;
+						position: relative;
+						left: 13%;
+						transition: 0.5s;
+						&:hover {
+							transform: scale(1.1);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#story {
+	width: 100%;
+	height: 1200px;
+	overflow: hidden;
+	.inner {
+		width: 1180px;
+		margin: 0 auto;
+		position: relative;
+		top: 50px;
+		h1 {
+			display: flex;
+			justify-content: center;
+			font: bold 30px/1px "DM Serif Display";
+		}
+		div {
+			&:nth-of-type(1) {
+				height: 450px;
+				margin-top: 30px;
+				background: #fff;
+				box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+				img{
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+
+				h2 {
+					text-align: center;
+					font: bold 50px/1 "DM Serif Display";
+					color: #fff;
+					position: relative;
+					top: -400px;
+					transition: 1s;
+				}
+				p {
+					padding: 0px 200px;
+					text-align: center;
+					font: bold 20px/30px "Faustina";
+					color: #fff;
+					position: relative;
+					top: -350px;
+					transition: 1s;
+				}
+				a {
+					display: block;
+					width: 200px;
+					height: 30px;
+					border: 1px solid #fff;
+					font: 15px/28px "Faustina";
+					color: #fff;
+					text-align: center;
+					position: relative;
+					left: 40%;
+					top: -60%;
+					transition: 1s;
+				}
+				img {
+					width: 100%;
+					transition: 1s;
+				}
+				&:hover img {
+					opacity: 0.3;
+				}
+			}
+			&:hover h2 {
+				color: #000;
+			}
+			&:hover p {
+				color: #000;
+			}
+			&:hover a {
+				color: #000;
+				border: 1px solid #000;
+			}
+
+			&:nth-of-type(2) {
+				width: 50%;
+				height: 500px;
+				margin-top: 40px;
+				padding: 10px;
+				background: #fff;
+				text-align: center;
+				position: relative;
+				left: -10px;
+				h2 {
+					font: bold 35px/1 "DM Serif Display";
+					position: relative;
+					top: -75%;
+				}
+				p {
+					position: relative;
+					top: -70%;
+					left: -99%;
+					font: bold 22px/30px "Faustina";
+					color: #000;
+					padding: 0px 30px;
+					opacity: 0;
+					transition: 1s;
+				}
+				a {
+					display: block;
+					width: 200px;
+					height: 30px;
+					border: 1px solid #000;
+					font: 15px/28px "Faustina";
+					color: #000;
+					text-align: center;
+					position: relative;
+					left: 30%;
+					top: -60%;
+					margin-bottom: 20px;
+					transition: 1s;
+				}
+				img {
+					width: 100%;
+					transition: 1s;
+				}
+				&:hover img {
+					opacity: 0.3;
+				}
+				&:hover a {
+					transform: scale(1.1);
+				}&:hover p {
+				top: -70%;
+				left: 0;
+				opacity: 1;
+			}
+			}
+			
+
+			&:nth-of-type(3) {
+				width: 50%;
+				height: 500px;
+				padding: 10px;
+				background: #fff;
+				position: absolute;
+				top: 520px;
+				right: -10px;
+				text-align: center;
+				h2 {
+					font: bold 35px/1 "DM Serif Display";
+					position: relative;
+					top: -75%;
+				}
+				p {
+					position: relative;
+					top: -70%;
+					right: -99%;
+					font: bold 22px/1 "Faustina";
+					color: #000;
+					padding: 0px 30px;
+					opacity: 0;
+					transition: 1s;
+				}
+				a {
+					display: block;
+					width: 200px;
+					height: 30px;
+					border: 1px solid #000;
+					font: 15px/28px "Faustina";
+					color: #000;
+					text-align: center;
+					position: relative;
+					left: 30%;
+					top: -55%;
+					margin-bottom: 20px;
+					transition: 1s;
+				}
+				img {
+					width: 100%;
+					transition: 1s;
+				}
+				&:hover a {
+					transform: scale(1.1);
+				}
+				&:hover img {
+					opacity: 0.3;
+				}
+			}
+			&:hover p {
+				right: 0;
+				opacity: 1;
+			}
+		}
+	}
+}
+
+#banner {
+	width: 100%;
+	height: 300px;
+	background: $beige;
+	margin-bottom: 100px;
+	margin-top: 30px;
+	padding: 20px;
+	&:hover h1{
+		opacity: 1;
+	}
+	&:hover p{
+		opacity: 1;
+	}
+h1{
+	display: block;
+
+	text-align: center;
+	font: bold 50px/1 'DM Serif Display';
+	color: #fff;
+	opacity: 0;
+	transition: 1s;
+}
+p{
+
+	padding:0px 10%;
+	text-align: center;
+	font: 20px/2 'Faustina';
+	color: #fff;
+	opacity: 0;
+	transition: 1s;
+}
+
+}
+
+#new_item {
+	width: 100%;
+	height: 700px;
+	overflow: hidden;
+	.inner {
+		width: 1180px;
+		margin: 0 auto;
+		position: relative;
+
+		h1 {
+			font: bold 35px/1 "DM Serif Display";
+			text-decoration: underline;
+			display: flex;
+			justify-content: center;
+			margin-bottom: 50px;
+		}
+		.wrap {
+			width: 100%;
+			article {
+				width: 280px;
+				margin-bottom: 100px;
+				margin-right: 20px;
+				float: left;
+				border: 1px solid #aaa;
+				box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+
+				&:last-of-type {
+					margin-right: 0px;
+				}
+				.pic {
+					width: 100%;
+					height: 350px;
+					overflow: hidden;
+					img {
+						width: 100%;
+						height: 100%;
+						background-size: auto;
+						background: $black;
+						transition: 1s;
+					}
+				}
+				&:hover .text {
+					opacity: 1;
+				}
+				&:hover img {
+					opacity: 0.4;
+				}
+				.text {
+					height: 1px;
+					bottom: 320px;
+					padding: 10px;
+					position: relative;
+					text-align: center;
+					font: 15px/28px "Faustina";
+					opacity: 0;
+					transition: 1s;
+				}
+				.pic_text {
+					display: block;
+					p {
+						text-align: center;
+					}
+					.item_name {
+						font: bold 22px/1 "Faustina";
+						color: $beige;
+						margin-bottom: 20px;
+					}
+					.item_case {
+						font: 15px/1 "Faustina";
+						color: $beige;
+						margin-bottom: 20px;
+					}
+					a {
+						display: block;
+						width: 200px;
+						height: 30px;
+						margin-bottom: 30px;
+						border: 1px solid #000;
+						font: 15px/28px "Faustina";
+						color: $beige;
+						text-align: center;
+						position: relative;
+						left: 13%;
+						transition: 0.5s;
+						&:hover {
+							transform: scale(1.1);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#direct {
+	width: 100%;
+	height: 1450px;
+	overflow: hidden;
+	.inner {
+		width: 1180px;
+		height: 100%;
+		margin: 0 auto;
+		position: relative;
+		top: 50px;
+		article {
+			width: 48%;
+			height: 500px;
+			margin: 20px;
+			padding: 20px;
+			text-align: center;
+			float: left;
+		}
+		h1 {
+			font: bold 30px/1 "DM Serif Display";
+			position: relative;
+			top: 100px;
+		}
+		p {
+			font: 20px/1 "Faustina";
+			position: relative;
+			top: 110px;
+		}
+		a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 300px;
+			height: 40px;
+			font: bold 20px/1 "Faustina";
+			border: 1px solid #000;
+			position: relative;
+			top: 150px;
+			left: 20%;
+		}
+		.direct_pic {
+			width: 45%;
+			height: 600px;
+			position: relative;
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
+
+#greeting {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	.inner {
+		width: 1180px;
+		height: 100%;
+		margin: 0 auto;
+		position: relative;
+		text-align: center;
+		h1{
+			display: flex;
+			justify-content: center;
+			font: bold 70px/1  "DM Serif Display";
+		}
+		h4 {
+			font: 14px/1 "DM Serif Display";
+		}
+		p {
+			font: 20px/30px "Faustina";
+			margin-top: 20px;
+		}
+		.sign {
+			width: 400px;
+			height: 150px;
+		}
+	}
+}
+
+#saying {
+	width: 100%;
+	height: 400px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+	.inner {
+		h1 {
+			text-align: center;
+		}
+
+		.swiper {
+			width: 100%;
+			height: 350px;
+			.swiper-slide {
+				text-align: center;
+				font-size: 18px;
+				background: #fff;
+
+				/* Center slide text vertically */
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+				img {
+					display: block;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+	}
+}
+
+#footer {
+	width: 100%;
+	overflow: hidden;
+	border-top: 1px solid #000;
+	.inner {
+		width: 1180px;
+		height: 300px;
+		margin: 0 auto;
+		&::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+		ul {
+			float: left;
+			margin-top: 30px;
+			margin-left: 150px;
+			h1 {
+				font: bold 20px/1px "DM Serif Display";
+				margin-bottom: 20px;
+			}
+			a {
+				font: 18px/30px "Faustina";
+				color: #000;
+			}
+			&:nth-of-type(3) {
+				display: block;
+				position: relative;
+				float: right;
+				left: 27%;
+				font-size: 40px;
+			}
+		}
+		address {
+			float: left;
+			position: relative;
+			top: 90px;
+			left: -350px;
+		}
+		.copy {
+			position: relative;
+			top: 190px;
+			left: -150px;
+		}
+		.contact {
+			position: relative;
+			left: -75%;
+			top: 80px;
+			h2 {
+				font: bold 30px/1 "DM Serif Display";
+				margin-bottom: 10px;
+				text-decoration: underline;
+			}
+			p {
+				font: 20px/1 "Faustina";
+			}
+		}
+	}
+}
