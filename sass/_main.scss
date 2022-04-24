@@ -13,8 +13,6 @@
 			display: flex;
 			justify-content: center;
 			font: bold 60px/1 "DM Serif Display";
-
-			color: #000;
 			overflow: hidden;
 		}
 		.menu {
@@ -36,7 +34,6 @@
 						transition: 0.5s;
 						&:hover {
 							transform: scale(1.2);
-							text-shadow: 1px 5px 10px $gray;
 						}
 					}
 				}
@@ -88,6 +85,7 @@
 
 		h1 {
 			font: bold 35px/1 "DM Serif Display";
+			color: $navy;
 			text-decoration: underline;
 			display: flex;
 			justify-content: center;
@@ -100,7 +98,7 @@
 				margin-bottom: 100px;
 				margin-right: 20px;
 				float: left;
-				border: 1px solid #aaa;
+				border: 1px solid $navy;
 				box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 
 				&:last-of-type {
@@ -114,12 +112,13 @@
 						width: 100%;
 						height: 100%;
 						background-size: auto;
-						background: $black;
+						background: #000;
 						transition: 1s;
 					}
 				}
 				&:hover .text {
 					opacity: 1;
+					color: $navy;
 				}
 				&:hover img {
 					opacity: 0.4;
@@ -141,12 +140,12 @@
 					}
 					.item_name {
 						font: bold 22px/1 "Faustina";
-						color: $beige;
+						color: $navy;
 						margin-bottom: 20px;
 					}
 					.item_case {
 						font: 15px/1 "Faustina";
-						color: $beige;
+						color: $navy;
 						margin-bottom: 20px;
 					}
 					a {
@@ -156,7 +155,7 @@
 						margin-bottom: 30px;
 						border: 1px solid #000;
 						font: 15px/28px "Faustina";
-						color: $beige;
+						color: $navy;
 						text-align: center;
 						position: relative;
 						left: 13%;
@@ -183,7 +182,10 @@
 		h1 {
 			display: flex;
 			justify-content: center;
-			font: bold 30px/1px "DM Serif Display";
+			font: bold 40px/1px "DM Serif Display";
+			color: $navy;
+			text-decoration: underline;
+			margin-bottom: 50px;
 		}
 		div {
 			&:nth-of-type(1) {
@@ -191,7 +193,7 @@
 				margin-top: 30px;
 				background: #fff;
 				box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-				img{
+				img {
 					width: 100%;
 					height: 100%;
 					object-fit: cover;
@@ -236,14 +238,14 @@
 				}
 			}
 			&:hover h2 {
-				color: #000;
+				color: $navy;
 			}
 			&:hover p {
-				color: #000;
+				color: $navy;
 			}
 			&:hover a {
-				color: #000;
-				border: 1px solid #000;
+				color: $navy;
+				border: 1px solid $navy;
 			}
 
 			&:nth-of-type(2) {
@@ -265,7 +267,7 @@
 					top: -70%;
 					left: -99%;
 					font: bold 22px/30px "Faustina";
-					color: #000;
+					color: $navy;
 					padding: 0px 30px;
 					opacity: 0;
 					transition: 1s;
@@ -274,9 +276,9 @@
 					display: block;
 					width: 200px;
 					height: 30px;
-					border: 1px solid #000;
+					border: 1px solid $navy;
 					font: 15px/28px "Faustina";
-					color: #000;
+					color: $navy;
 					text-align: center;
 					position: relative;
 					left: 30%;
@@ -293,13 +295,13 @@
 				}
 				&:hover a {
 					transform: scale(1.1);
-				}&:hover p {
-				top: -70%;
-				left: 0;
-				opacity: 1;
+				}
+				&:hover p {
+					top: -70%;
+					left: 0;
+					opacity: 1;
+				}
 			}
-			}
-			
 
 			&:nth-of-type(3) {
 				width: 50%;
@@ -320,7 +322,7 @@
 					top: -70%;
 					right: -99%;
 					font: bold 22px/1 "Faustina";
-					color: #000;
+					color: $navy;
 					padding: 0px 30px;
 					opacity: 0;
 					transition: 1s;
@@ -329,7 +331,7 @@
 					display: block;
 					width: 200px;
 					height: 30px;
-					border: 1px solid #000;
+					border: 1px solid $navy;
 					font: 15px/28px "Faustina";
 					color: #000;
 					text-align: center;
@@ -345,6 +347,8 @@
 				}
 				&:hover a {
 					transform: scale(1.1);
+					color: $navy;
+					border: 1px solid $navy;
 				}
 				&:hover img {
 					opacity: 0.3;
@@ -361,35 +365,33 @@
 #banner {
 	width: 100%;
 	height: 300px;
-	background: $beige;
+	background: $navy;
 	margin-bottom: 100px;
 	margin-top: 30px;
 	padding: 20px;
-	&:hover h1{
+	&:hover h1 {
 		opacity: 1;
 	}
-	&:hover p{
+	&:hover p {
 		opacity: 1;
 	}
-h1{
-	display: block;
+	h1 {
+		display: block;
 
-	text-align: center;
-	font: bold 50px/1 'DM Serif Display';
-	color: #fff;
-	opacity: 0;
-	transition: 1s;
-}
-p{
-
-	padding:0px 10%;
-	text-align: center;
-	font: 20px/2 'Faustina';
-	color: #fff;
-	opacity: 0;
-	transition: 1s;
-}
-
+		text-align: center;
+		font: bold 50px/1 "DM Serif Display";
+		color: #fff;
+		opacity: 0;
+		transition: 1s;
+	}
+	p {
+		padding: 0px 10%;
+		text-align: center;
+		font: 20px/2 "Faustina";
+		color: #fff;
+		opacity: 0;
+		transition: 1s;
+	}
 }
 
 #new_item {
@@ -403,6 +405,7 @@ p{
 
 		h1 {
 			font: bold 35px/1 "DM Serif Display";
+			color: $navy;
 			text-decoration: underline;
 			display: flex;
 			justify-content: center;
@@ -415,7 +418,7 @@ p{
 				margin-bottom: 100px;
 				margin-right: 20px;
 				float: left;
-				border: 1px solid #aaa;
+				border: 1px solid $navy;
 				box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 
 				&:last-of-type {
@@ -429,12 +432,12 @@ p{
 						width: 100%;
 						height: 100%;
 						background-size: auto;
-						background: $black;
 						transition: 1s;
 					}
 				}
 				&:hover .text {
 					opacity: 1;
+					color: $navy;
 				}
 				&:hover img {
 					opacity: 0.4;
@@ -446,6 +449,7 @@ p{
 					position: relative;
 					text-align: center;
 					font: 15px/28px "Faustina";
+					color: $navy;
 					opacity: 0;
 					transition: 1s;
 				}
@@ -456,12 +460,12 @@ p{
 					}
 					.item_name {
 						font: bold 22px/1 "Faustina";
-						color: $beige;
+						color: $navy;
 						margin-bottom: 20px;
 					}
 					.item_case {
 						font: 15px/1 "Faustina";
-						color: $beige;
+						color: $navy;
 						margin-bottom: 20px;
 					}
 					a {
@@ -469,9 +473,9 @@ p{
 						width: 200px;
 						height: 30px;
 						margin-bottom: 30px;
-						border: 1px solid #000;
+						border: 1px solid $navy;
 						font: 15px/28px "Faustina";
-						color: $beige;
+						color: $navy;
 						text-align: center;
 						position: relative;
 						left: 13%;
@@ -506,11 +510,13 @@ p{
 		}
 		h1 {
 			font: bold 30px/1 "DM Serif Display";
+			color: $navy;
 			position: relative;
 			top: 100px;
 		}
 		p {
 			font: 20px/1 "Faustina";
+			color: $navy;
 			position: relative;
 			top: 110px;
 		}
@@ -521,7 +527,8 @@ p{
 			width: 300px;
 			height: 40px;
 			font: bold 20px/1 "Faustina";
-			border: 1px solid #000;
+			color: $navy;
+			border: 1px solid $navy;
 			position: relative;
 			top: 150px;
 			left: 20%;
@@ -543,16 +550,17 @@ p{
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
+	color: $navy;
 	.inner {
 		width: 1180px;
 		height: 100%;
 		margin: 0 auto;
 		position: relative;
 		text-align: center;
-		h1{
+		h1 {
 			display: flex;
 			justify-content: center;
-			font: bold 70px/1  "DM Serif Display";
+			font: bold 70px/1 "DM Serif Display";
 		}
 		h4 {
 			font: 14px/1 "DM Serif Display";
@@ -564,6 +572,7 @@ p{
 		.sign {
 			width: 400px;
 			height: 150px;
+			margin-bottom: 150px;
 		}
 	}
 }
@@ -571,12 +580,13 @@ p{
 #saying {
 	width: 100%;
 	height: 400px;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	color: $navy;
 
 	.inner {
 		h1 {
 			text-align: center;
+			font: bold 40px/1 'DM Serif Display';
+			margin-bottom: 50px;
 		}
 
 		.swiper {
@@ -585,7 +595,6 @@ p{
 			.swiper-slide {
 				text-align: center;
 				font-size: 18px;
-				background: #fff;
 
 				/* Center slide text vertically */
 				display: -webkit-box;
@@ -636,19 +645,28 @@ p{
 				font: 18px/30px "Faustina";
 				color: #000;
 			}
+			&:nth-of-type(1) {
+				position: relative;
+				left: 15%;
+			}
+			&:nth-of-type(2) {
+				position: relative;
+				left: 10%;
+			}
 			&:nth-of-type(3) {
 				display: block;
 				position: relative;
 				float: right;
-				left: 27%;
+				left: 90px;
+				bottom: 10px;
 				font-size: 40px;
 			}
 		}
 		address {
-			float: left;
+			width: 100%;
 			position: relative;
-			top: 90px;
-			left: -350px;
+			left: -55%;
+			top: 140px;
 		}
 		.copy {
 			position: relative;
@@ -656,9 +674,10 @@ p{
 			left: -150px;
 		}
 		.contact {
+			width: 100%;
 			position: relative;
-			left: -75%;
 			top: 80px;
+			left: -650px;
 			h2 {
 				font: bold 30px/1 "DM Serif Display";
 				margin-bottom: 10px;

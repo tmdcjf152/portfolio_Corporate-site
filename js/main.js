@@ -1,10 +1,11 @@
+// index.html 이미지 시퀸스 
 const main = document.querySelector("main");
 
 let tags = "";
 
 for (let i = 0; i < 397; i++) {
     tags += `<article><img src="img/index/pic${i}.jpg"></article>`
-}
+};
 
 main.innerHTML = tags;
 

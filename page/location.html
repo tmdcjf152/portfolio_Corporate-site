@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="../js/main.js"></script>
+    <script src="../js/anime.js"></script>
+    <script src="https://kit.fontawesome.com/8cb4d71d7e.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+
+
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header id="header">
+        <div class="inner">
+            <a href="index.html">BYREDO</a>
+            <nav class="menu">
+                <ul id="gnb">
+                    <li><a href="member.html">WHO WE ARE</a></li>
+                    <li><a href="gallery.html">PERFUME</a></li>
+                    <li><a href="yotube.html">YOUTUBE</a></li>
+                    <li><a href="community.html">COMMUNITY</a></li>
+                    <li><a href="location.html">LOCATION</a></li>
+                </ul>
+                <ul class="util">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="community.html">Help</a></li>
+                    <li><a href="#">English/한</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+    <section class="content">
+        <div class="inner">
+        </div>
+    </section>
+
+    <section id="saying">
+        <div class="inner">
+            <h1>What They Are Saying</h1>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../img/logo1.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/logo2.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/logo3.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/logo4.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/logo5.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/Logo6.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/Logo7.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/logo8.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/logo9.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer id="footer">
+        <div class="inner">
+            <ul>
+                <li>
+                    <h1>WHO WE ARE</h1>
+                </li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Team</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <h1>Customer Service</h1>
+                </li>
+                <li><a href="community.html">FAQ</a></li>
+                <li><a href="community.html">1:1 Question</a></li>
+                <li><a href="community.html">Notice</a></li>
+                <li><a href="location.html">Shop</a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i> </a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+            </ul>
+            <div class="contact">
+                <h2>Contact Us</h2>
+                <p>1-800-255-1342</p>
+                <p>Monday to Saturday 9AM to 10PM EST</p>
+            </div>
+
+            <address>
+                address: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, dolore.<br />
+                TEL : +82-2-2100-2114 FAX : +82-2-2100-7999
+            </address>
+
+            <p class="copy">Copyright &copy; 2021 ddddddddd Right reserved.</p>
+        </div>
+
+    </footer>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 5,
+            spaceBetween: 0,
+            slidesPerGroup: 1,
+            loop: true,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    </body>
+    </html>

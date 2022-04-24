@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Faustina:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Faustina:wght@600&display=swap");
 * {
@@ -34,7 +35,6 @@ a {
   display: flex;
   justify-content: center;
   font: bold 60px/1 "DM Serif Display";
-  color: #000;
   overflow: hidden;
 }
 #header .inner .menu #gnb {
@@ -58,7 +58,6 @@ a {
 }
 #header .inner .menu #gnb li a:hover {
   transform: scale(1.2);
-  text-shadow: 1px 5px 10px #8C8C8C;
 }
 #header .inner .menu .util {
   position: absolute;
@@ -106,6 +105,7 @@ a {
 }
 #best .inner h1 {
   font: bold 35px/1 "DM Serif Display";
+  color: rgb(20, 1, 73);
   text-decoration: underline;
   display: flex;
   justify-content: center;
@@ -119,7 +119,7 @@ a {
   margin-bottom: 100px;
   margin-right: 20px;
   float: left;
-  border: 1px solid #aaa;
+  border: 1px solid rgb(20, 1, 73);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 #best .inner .wrap article:last-of-type {
@@ -134,11 +134,12 @@ a {
   width: 100%;
   height: 100%;
   background-size: auto;
-  background: #0D0D0D;
+  background: #000;
   transition: 1s;
 }
 #best .inner .wrap article:hover .text {
   opacity: 1;
+  color: rgb(20, 1, 73);
 }
 #best .inner .wrap article:hover img {
   opacity: 0.4;
@@ -161,12 +162,12 @@ a {
 }
 #best .inner .wrap article .pic_text .item_name {
   font: bold 22px/1 "Faustina";
-  color: #D9AF8B;
+  color: rgb(20, 1, 73);
   margin-bottom: 20px;
 }
 #best .inner .wrap article .pic_text .item_case {
   font: 15px/1 "Faustina";
-  color: #D9AF8B;
+  color: rgb(20, 1, 73);
   margin-bottom: 20px;
 }
 #best .inner .wrap article .pic_text a {
@@ -176,7 +177,7 @@ a {
   margin-bottom: 30px;
   border: 1px solid #000;
   font: 15px/28px "Faustina";
-  color: #D9AF8B;
+  color: rgb(20, 1, 73);
   text-align: center;
   position: relative;
   left: 13%;
@@ -200,7 +201,10 @@ a {
 #story .inner h1 {
   display: flex;
   justify-content: center;
-  font: bold 30px/1px "DM Serif Display";
+  font: bold 40px/1px "DM Serif Display";
+  color: rgb(20, 1, 73);
+  text-decoration: underline;
+  margin-bottom: 50px;
 }
 #story .inner div:nth-of-type(1) {
   height: 450px;
@@ -252,14 +256,14 @@ a {
   opacity: 0.3;
 }
 #story .inner div:hover h2 {
-  color: #000;
+  color: rgb(20, 1, 73);
 }
 #story .inner div:hover p {
-  color: #000;
+  color: rgb(20, 1, 73);
 }
 #story .inner div:hover a {
-  color: #000;
-  border: 1px solid #000;
+  color: rgb(20, 1, 73);
+  border: 1px solid rgb(20, 1, 73);
 }
 #story .inner div:nth-of-type(2) {
   width: 50%;
@@ -281,7 +285,7 @@ a {
   top: -70%;
   left: -99%;
   font: bold 22px/30px "Faustina";
-  color: #000;
+  color: rgb(20, 1, 73);
   padding: 0px 30px;
   opacity: 0;
   transition: 1s;
@@ -290,9 +294,9 @@ a {
   display: block;
   width: 200px;
   height: 30px;
-  border: 1px solid #000;
+  border: 1px solid rgb(20, 1, 73);
   font: 15px/28px "Faustina";
-  color: #000;
+  color: rgb(20, 1, 73);
   text-align: center;
   position: relative;
   left: 30%;
@@ -335,7 +339,7 @@ a {
   top: -70%;
   right: -99%;
   font: bold 22px/1 "Faustina";
-  color: #000;
+  color: rgb(20, 1, 73);
   padding: 0px 30px;
   opacity: 0;
   transition: 1s;
@@ -344,7 +348,7 @@ a {
   display: block;
   width: 200px;
   height: 30px;
-  border: 1px solid #000;
+  border: 1px solid rgb(20, 1, 73);
   font: 15px/28px "Faustina";
   color: #000;
   text-align: center;
@@ -360,6 +364,8 @@ a {
 }
 #story .inner div:nth-of-type(3):hover a {
   transform: scale(1.1);
+  color: rgb(20, 1, 73);
+  border: 1px solid rgb(20, 1, 73);
 }
 #story .inner div:nth-of-type(3):hover img {
   opacity: 0.3;
@@ -372,7 +378,7 @@ a {
 #banner {
   width: 100%;
   height: 300px;
-  background: #D9AF8B;
+  background: rgb(20, 1, 73);
   margin-bottom: 100px;
   margin-top: 30px;
   padding: 20px;
@@ -412,6 +418,7 @@ a {
 }
 #new_item .inner h1 {
   font: bold 35px/1 "DM Serif Display";
+  color: rgb(20, 1, 73);
   text-decoration: underline;
   display: flex;
   justify-content: center;
@@ -425,7 +432,7 @@ a {
   margin-bottom: 100px;
   margin-right: 20px;
   float: left;
-  border: 1px solid #aaa;
+  border: 1px solid rgb(20, 1, 73);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 #new_item .inner .wrap article:last-of-type {
@@ -440,11 +447,11 @@ a {
   width: 100%;
   height: 100%;
   background-size: auto;
-  background: #0D0D0D;
   transition: 1s;
 }
 #new_item .inner .wrap article:hover .text {
   opacity: 1;
+  color: rgb(20, 1, 73);
 }
 #new_item .inner .wrap article:hover img {
   opacity: 0.4;
@@ -456,6 +463,7 @@ a {
   position: relative;
   text-align: center;
   font: 15px/28px "Faustina";
+  color: rgb(20, 1, 73);
   opacity: 0;
   transition: 1s;
 }
@@ -467,12 +475,12 @@ a {
 }
 #new_item .inner .wrap article .pic_text .item_name {
   font: bold 22px/1 "Faustina";
-  color: #D9AF8B;
+  color: rgb(20, 1, 73);
   margin-bottom: 20px;
 }
 #new_item .inner .wrap article .pic_text .item_case {
   font: 15px/1 "Faustina";
-  color: #D9AF8B;
+  color: rgb(20, 1, 73);
   margin-bottom: 20px;
 }
 #new_item .inner .wrap article .pic_text a {
@@ -480,9 +488,9 @@ a {
   width: 200px;
   height: 30px;
   margin-bottom: 30px;
-  border: 1px solid #000;
+  border: 1px solid rgb(20, 1, 73);
   font: 15px/28px "Faustina";
-  color: #D9AF8B;
+  color: rgb(20, 1, 73);
   text-align: center;
   position: relative;
   left: 13%;
@@ -514,11 +522,13 @@ a {
 }
 #direct .inner h1 {
   font: bold 30px/1 "DM Serif Display";
+  color: rgb(20, 1, 73);
   position: relative;
   top: 100px;
 }
 #direct .inner p {
   font: 20px/1 "Faustina";
+  color: rgb(20, 1, 73);
   position: relative;
   top: 110px;
 }
@@ -529,7 +539,8 @@ a {
   width: 300px;
   height: 40px;
   font: bold 20px/1 "Faustina";
-  border: 1px solid #000;
+  color: rgb(20, 1, 73);
+  border: 1px solid rgb(20, 1, 73);
   position: relative;
   top: 150px;
   left: 20%;
@@ -548,6 +559,7 @@ a {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  color: rgb(20, 1, 73);
 }
 #greeting .inner {
   width: 1180px;
@@ -571,16 +583,18 @@ a {
 #greeting .inner .sign {
   width: 400px;
   height: 150px;
+  margin-bottom: 150px;
 }
 
 #saying {
   width: 100%;
   height: 400px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  color: rgb(20, 1, 73);
 }
 #saying .inner h1 {
   text-align: center;
+  font: bold 40px/1 "DM Serif Display";
+  margin-bottom: 50px;
 }
 #saying .inner .swiper {
   width: 100%;
@@ -589,7 +603,6 @@ a {
 #saying .inner .swiper .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
   /* Center slide text vertically */
   display: flex;
   justify-content: center;
@@ -631,18 +644,27 @@ a {
   font: 18px/30px "Faustina";
   color: #000;
 }
+#footer .inner ul:nth-of-type(1) {
+  position: relative;
+  left: 15%;
+}
+#footer .inner ul:nth-of-type(2) {
+  position: relative;
+  left: 10%;
+}
 #footer .inner ul:nth-of-type(3) {
   display: block;
   position: relative;
   float: right;
-  left: 27%;
+  left: 90px;
+  bottom: 10px;
   font-size: 40px;
 }
 #footer .inner address {
-  float: left;
+  width: 100%;
   position: relative;
-  top: 90px;
-  left: -350px;
+  left: -55%;
+  top: 140px;
 }
 #footer .inner .copy {
   position: relative;
@@ -650,9 +672,10 @@ a {
   left: -150px;
 }
 #footer .inner .contact {
+  width: 100%;
   position: relative;
-  left: -75%;
   top: 80px;
+  left: -650px;
 }
 #footer .inner .contact h2 {
   font: bold 30px/1 "DM Serif Display";
@@ -663,26 +686,427 @@ a {
   font: 20px/1 "Faustina";
 }
 
-a h1 {
-  height: 100%;
-  font: bold 60px/1 "DM Serif Display";
-  color: #000;
-  text-align: center;
-  margin-top: 100px;
+#header {
+  width: 100%;
 }
-a main {
+#header .inner {
+  width: 1180px;
+  height: 120px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 30px;
+}
+#header .inner a {
+  display: flex;
+  justify-content: center;
+  font: bold 60px/1 "DM Serif Display";
+  color: rgb(20, 1, 73);
+  overflow: hidden;
+}
+#header .inner .menu #gnb {
+  position: absolute;
+  left: 0%;
+  bottom: 0;
+}
+#header .inner .menu #gnb li {
+  float: left;
+}
+#header .inner .menu #gnb li a {
+  display: block;
+  padding: 0px 40px;
+  font: bold 20px/1 "Faustina";
+  color: rgb(20, 1, 73);
+  position: relative;
+  left: 120px;
+  top: 30px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+#header .inner .menu #gnb li a:hover {
+  transform: scale(1.2);
+}
+#header .inner .menu .util {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+#header .inner .menu .util li {
+  float: left;
+}
+#header .inner .menu .util li a {
+  position: relative;
+  padding: 8px;
+  font: 15px/1 "Faustina";
+  color: rgb(20, 1, 73);
+  transition: 0.5s;
+}
+#header .inner .menu .util li a:hover {
+  transform: scale(1.2);
+}
+
+.content {
+  width: 100%;
+  margin: 100px 0px;
+}
+.content .inner {
+  width: 1180px;
+  height: 1000px;
+  margin: 0 auto;
+  min-height: 500px;
+}
+
+#saying {
+  width: 100%;
+  height: 400px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: rgb(20, 1, 73);
+}
+#saying .inner h1 {
+  text-align: center;
+}
+#saying .inner .swiper {
+  width: 100%;
+  height: 350px;
+}
+#saying .inner .swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#saying .inner .swiper .swiper-slide img {
+  display: block;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#footer {
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px solid rgb(20, 1, 73);
+}
+#footer .inner {
+  width: 1180px;
+  height: 300px;
+  margin: 0 auto;
+}
+#footer .inner::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#footer .inner ul {
+  float: left;
+  margin-top: 30px;
+  margin-left: 150px;
+}
+#footer .inner ul h1 {
+  font: bold 20px/1px "DM Serif Display";
+  color: rgb(20, 1, 73);
+  margin-bottom: 20px;
+}
+#footer .inner ul a {
+  font: 18px/30px "Faustina";
+  color: rgb(20, 1, 73);
+}
+#footer .inner ul:nth-of-type(1) {
+  position: relative;
+  left: 15%;
+}
+#footer .inner ul:nth-of-type(2) {
+  position: relative;
+  left: 10%;
+}
+#footer .inner ul:nth-of-type(3) {
+  display: block;
+  position: relative;
+  float: right;
+  left: 90px;
+  bottom: 10px;
+  font-size: 40px;
+}
+#footer .inner address {
+  width: 100%;
+  position: relative;
+  left: -55%;
+  top: 140px;
+  color: rgb(20, 1, 73);
+}
+#footer .inner .copy {
+  position: relative;
+  top: 190px;
+  left: -150px;
+}
+#footer .inner .contact {
+  width: 100%;
+  position: relative;
+  top: 80px;
+  left: -650px;
+}
+#footer .inner .contact h2 {
+  font: bold 30px/1 "DM Serif Display";
+  color: rgb(20, 1, 73);
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+#footer .inner .contact p {
+  font: 20px/1 "Faustina";
+  color: rgb(20, 1, 73);
+}
+
+.content {
+  width: 100%;
+  overflow: hidden;
+  color: rgb(20, 1, 73);
+  font-family: "Faustina";
+}
+.content .inner {
+  width: 1180px;
+  height: 100%;
+  text-align: center;
+}
+.content .inner h1 {
+  font: bold 100px/1 "DM Serif Display";
+  margin-bottom: 200px;
+  margin-top: 200px;
+}
+.content .inner .byred_text {
+  height: 400px;
+  font: 25px/2 "Faustina";
+  margin-bottom: 200px;
+  color: #fff;
+  background: rgb(20, 1, 73);
+  border-radius: 50%;
+}
+.content .inner .byred_text span {
+  font: 50px/1 "DM Serif Display";
+  position: relative;
+  top: 0px;
+}
+.content .inner .byred_text p {
+  position: relative;
+  top: 30px;
+  padding: 40px;
+}
+.content .inner .wrap {
+  width: 100%;
+  height: 2800px;
+}
+.content .inner .wrap .team_title {
+  font: bold 30px/1 "DM Serif Display";
+  margin-bottom: 50px;
+}
+.content .inner .wrap .ceo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15%;
+}
+.content .inner .wrap .Planning {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15%;
+}
+.content .inner .wrap .Planning article {
+  margin-left: 40px;
+}
+.content .inner .wrap .Planning article .pic {
+  width: 100%;
+  height: 100%;
+}
+.content .inner .wrap .Planning article .member_text {
+  position: relative;
+  left: -40px;
+}
+.content .inner .wrap .Design {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15%;
+}
+.content .inner .wrap .Design article {
+  margin-left: 40px;
+}
+.content .inner .wrap .Design article .pic {
+  width: 100%;
+  height: 100%;
+}
+.content .inner .wrap .Design article .member_text {
+  position: relative;
+  left: -40px;
+}
+.content .inner .wrap .marketing {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+.content .inner .wrap .marketing article {
+  margin-left: 40px;
+}
+.content .inner .wrap .marketing article .pic {
+  width: 100%;
+  height: 100%;
+}
+.content .inner .wrap .marketing article .member_text {
+  position: relative;
+  left: -40px;
+}
+.content .inner .wrap article {
+  width: 280px;
+  height: 400px;
+}
+.content .inner .wrap article img {
+  width: 100%;
+  height: 100%;
+}
+.content .inner .team_title {
+  width: 290px;
+  height: 130px;
+  background: rgb(20, 1, 73);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 36%;
+  border-radius: 50%;
+}
+
+main .content .inner {
+  width: 1180px;
+  height: 1500px;
+}
+main .content .inner h1 {
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+main .content .inner .faq-pic {
+  width: 1180px;
+  height: 400px;
+  text-align: center;
   background: #000;
 }
-a main article {
+main .content .inner .faq-pic img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+main .content .inner .faq-pic i {
+  display: block;
+  position: relative;
+  top: -270px;
+  font-size: 40px;
+  color: #fff;
+}
+main .content .inner .faq-pic p {
+  display: block;
+  position: relative;
+  top: -220px;
+  font: 20px/1 "Faustina";
+  color: #fff;
+}
+main .content .inner .faq-pic a {
+  width: 230px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -140px;
+  left: 41%;
+  font: 20px/1 "Faustina";
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+main .content .inner ul {
+  width: 100%;
+  margin: 40px 0px;
+  padding: 0px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+main .content .inner ul li {
+  width: 200px;
+  height: 50px;
+  float: left;
+  font: 25px/1 "Faustina";
+}
+main .content .inner ul li a {
+  line-height: 1.7;
+  color: rgb(20, 1, 73);
+}
+main .content .inner .faq {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+main .content .inner .faq .faq-item {
+  height: 50px;
+  color: rgb(20, 1, 73);
+}
+main .content .inner .faq .faq-item .faq-item-header {
+  font: bold 25px/1 "Faustina";
+  padding: 20px 0px;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+main .content .inner .faq .faq-item .faq-item-header::after {
+  content: "\2+";
+  font-size: 2rem;
+  position: absolute;
+  right: 14rem;
+}
+main .content .inner .faq .faq-item .faq-item-header.active::after {
+  content: "−";
+}
+main .content .inner .faq .faq-item .faq-item-body {
+  margin: 0 auto;
+  width: 800px;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+main .content .inner .faq .faq-item .faq-item-body .faq-item-body-content {
+  font: 20px/1 "Faustina";
+  text-align: left;
+  background: rgba(5, 0, 73, 0.103);
+  padding: 20px 30px;
+  margin: 10px 0px;
+  line-height: 1.5rem;
+}
+
+body {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/paper_fibers.png) repeat;
+}
+body a h1 {
+  font: bold 60px/1 "DM Serif Display";
+  color: rgb(20, 1, 73);
+  text-align: center;
+  margin-top: 100px;
+  z-index: 3;
+}
+body a main {
+  width: 100%;
+  height: 100%;
+}
+body a main article {
   width: 100%;
   height: 50vh;
   position: absolute;
   top: 25%;
   left: 0;
 }
-a main article img {
+body a main article img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
