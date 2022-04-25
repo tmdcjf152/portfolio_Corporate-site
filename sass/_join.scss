@@ -1,0 +1,85 @@
+.join {
+	width: 100%;
+	padding: 150px 0;
+	.inner {
+		width: 1180px;
+		margin: 0 auto;
+		h1 {
+			font: 40px/1 $h;
+			color: $navy;
+			text-align: center;
+			margin-bottom: 50px;
+		}
+        img{
+            width: 90%;
+            margin-bottom: 50px;
+            position: relative;
+            left: 5%;
+
+        }
+		table {
+			th,
+			td {
+
+				padding: 20px 25px;
+			}
+			th {
+				width: 20%;
+                font: 20px/1 $p;
+				input[type="reset"],
+				input[type="submit"] {
+                    position: relative;
+                    left: 5%;
+					width: 25%;
+					height: 40px;
+					border: 1px solid $navy;
+                    background: #fff;
+					margin: 20px;
+					font: bold 20px/1 $p;
+					color: $navy;
+					cursor: pointer;
+					transition: 0.5s;
+                    &:hover{
+                        background: $navy;
+                        color: #fff;
+                    }
+				}
+			}td{
+                input[type=text],input[type=password],input[type=email]{
+                    width: 35%;
+                    height: 30px;
+                    background:#fff;
+                    padding: 10px;
+                    border: 1px solid $navy;
+                    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+                }
+                input[type=tel]{
+                    width: 19.5%;
+                    height: 30px;
+                    background:#fff;
+                    padding: 10px;
+                    border: 1px solid $navy;
+                    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+                }
+               select{
+                    width: 15%;
+                    height: 30px;
+                    background:#fff;
+                    padding: 0px;
+                    border: 1px solid $navy;
+                    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+                }
+                #text{
+                    width: 800px;
+                    height: 400px;
+                    position: relative;
+                    left: -5%;
+                    text-align: left;
+                    padding: 0 auto;
+                    resize: none;
+                }
+
+            }
+		}
+	}
+}

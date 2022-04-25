@@ -579,13 +579,13 @@
 
 #saying {
 	width: 100%;
-	height: 400px;
+	height: 200px;
 	color: $navy;
 
 	.inner {
 		h1 {
 			text-align: center;
-			font: bold 40px/1 'DM Serif Display';
+			font: bold 40px/1 "DM Serif Display";
 			margin-bottom: 50px;
 		}
 
@@ -689,3 +689,239 @@
 		}
 	}
 }
+
+// 테블릿구역ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+// 테블릿구역ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+// 테블릿구역ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+// 테블릿구역ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+@media screen and (max-width: 1023px) {
+	body {
+		#header {
+			.inner {
+				left: -90px;
+			}
+			.util {
+				position: relative;
+				left: 70%;
+			}
+		}
+
+		#best {
+			height: 1300px;
+			.inner {
+				width: 70%;
+				margin: 0 auto;
+				position: absolute;
+				left: 20%;
+				h1 {
+					position: relative;
+					left: -30px;
+					font: bold 40px/1px "DM Serif Display";
+				}
+				.wrap {
+					article {
+						margin-left: 20px;
+					}
+				}
+			}
+		}
+
+		#story {
+			height: 1200px;
+			.inner {
+				width: 1023px;
+				div {
+					&:nth-of-type(2) {
+						width: 45%;
+						height: 400px;
+						margin-top: 40px;
+						padding: 10px;
+						background: #fff;
+						text-align: center;
+						position: relative;
+						left: 30px;
+						h2 {
+							top: -80%;
+						}
+						p {
+							top: -70%;
+							font: bold 18px/20px "Faustina";
+						}
+						a {
+							top: -60%;
+						}
+					}
+
+					&:nth-of-type(3) {
+						width: 45%;
+						height: 400px;
+						top: 540px;
+						right: 50px;
+						h2 {
+							top: -80%;
+						}
+						p {
+							top: -70%;
+							right: -99%;
+							font: bold 18px/1 "Faustina";
+							color: $navy;
+							padding: 0px 30px;
+							opacity: 0;
+							transition: 1s;
+						}
+						a {
+							display: block;
+							width: 200px;
+							height: 30px;
+							border: 1px solid $navy;
+							font: 15px/28px "Faustina";
+							color: #000;
+							text-align: center;
+							position: relative;
+							left: 30%;
+							top: -61%;
+							margin-bottom: 20px;
+							transition: 1s;
+						}
+						img {
+							width: 100%;
+							transition: 1s;
+						}
+						&:hover a {
+							transform: scale(1.1);
+							color: $navy;
+							border: 1px solid $navy;
+						}
+						&:hover img {
+							opacity: 0.3;
+						}
+					}
+					&:hover p {
+						right: 0;
+						opacity: 1;
+					}
+				}
+			}
+		}
+
+		#banner {
+			h1 {
+				font: bold 35px/1 "DM Serif Display";
+			}
+			p {
+				font: 18px/1.5 "Faustina";
+			}
+		}
+
+		#new_item {
+			height: 1300px;
+			.inner {
+				width: 70%;
+				margin: 0 auto;
+				position: absolute;
+				left: 20%;
+				h1 {
+					position: relative;
+					left: -30px;
+					font: bold 40px/1px "DM Serif Display";
+				}
+			}
+		}
+
+		#direct {
+			.inner {
+				width: 100%;
+				article {
+					width: 45%;
+					h1 {
+						position: relative;
+						left: 20px;
+					}
+					p {
+						position: relative;
+						left: 20px;
+					}
+				}
+			}
+		}
+
+		#greeting {
+			.inner {
+				width: 900px;
+			}
+		}
+
+		#saying {
+			height: 290px;
+			.inner {
+				.swiper {
+					height: 250px;
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		#footer {
+			.inner {
+				width: 70%;
+				height: 300px;
+				ul {
+					float: left;
+					margin-top: 30px;
+					margin-left:70px;
+					h1 {
+						font: bold 15px/1px "DM Serif Display";
+						margin-bottom: 10px;
+					}
+					a {
+						font: 15px/30px "Faustina";
+						color: #000;
+					}
+					&:nth-of-type(1) {
+						position: relative;
+						left: 15%;
+					}
+					&:nth-of-type(2) {
+						position: relative;
+						left: 10%;
+					}
+					&:nth-of-type(3) {
+						display: block;
+						position: relative;
+						float: right;
+						left: 90px;
+						bottom: 10px;
+						font-size: 40px;
+					}
+				}
+				address {
+					width: 100%;
+					position: relative;
+					left: -70%;
+					top: 100px;
+				}
+				.copy {
+					position: relative;
+					top: 190px;
+					left: -150px;
+				}
+				.contact {
+					width: 100%;
+					position: relative;
+					top: 80px;
+					left: -70%;
+					h2 {
+						font: bold 30px/1 "DM Serif Display";
+						margin-bottom: 10px;
+						text-decoration: underline;
+					}
+					p {
+						font: 20px/1 "Faustina";
+					}
+				}
+			}
+		}
+	}
+}
+

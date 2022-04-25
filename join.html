@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script defer src="js/join.js"></script>
+    <script defer src="js/anime.js"></script>
+    <script src="https://kit.fontawesome.com/8cb4d71d7e.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+
+
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header id="header">
+        <div class="inner">
+            <a href="index.html">BYREDO</a>
+            <nav class="menu">
+                <ul id="gnb">
+                    <li><a href="member.html">WHO WE ARE</a></li>
+                    <li><a href="gallery.html">PERFUME</a></li>
+                    <li><a href="yotube.html">YOUTUBE</a></li>
+                    <li><a href="community.html">COMMUNITY</a></li>
+                    <li><a href="location.html">LOCATION</a></li>
+                </ul>
+                <ul class="util">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="community.html">Help</a></li>
+                    <li><a href="#">English/한</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+    <section class="join">
+        <div class="inner">   
+                       <img src="img/join.jpg" alt="">
+            <h1>JOIN MEMBERSHIP</h1>
+            <form action="result.html" method="get" id="member">
+                <fieldset>
+                    <legend class="hidden">회원가입 양식</legend>
+                </fieldset>
+  
+
+                <table>
+                    <caption class="hidden">생성할 아이디,비밀번호,성별,이메일 작성</caption>
+                    <!-- ID -->
+                    <tr>
+                        <th scope="row"><label for="userid">ID</label></th>
+                        <td>
+                            <input type="text" name="userid" id="userid">
+                        </td>
+                    </tr>
+
+                    <!-- Password -->
+                    <tr>
+                        <th scope="row"><label for="password1">PASSWORD</label></th>
+                        <td>
+                            <input type="password" name="password1" id="password1">
+                        </td>
+                    </tr>
+                    <!-- Re Password -->
+                    <tr>
+                        <th scope="row"><label for="password2">RE PASSWORD</label></th>
+                        <td>
+                            <input type="password" name="password2" id="password2">
+                        </td>
+                    </tr>
+
+                    <!-- Email -->
+                    <tr>
+                        <th scope="row"><label for="email">E-MAIL</label></th>
+                        <td>
+                            <input type="email" name="email" id="email">
+                        </td>
+                    </tr>
+
+                    <!-- Tel -->
+                    <tr>
+                        <th scope="row"><label for="tel">TEL</label></th>
+                        <td><select name="number" id="number">
+                                <option value="82">+82(Republic of Korea)</option>
+                                <option value="1">+1(USA)</option>
+                                <option value="84">+84(Vietnam)</option>
+                                <option value="44">+44(United Kingdom)</option>
+                                <option value="61">+61(Australia)</option>
+                                <option value="81">+81(Japan)</option>
+                                <option value="86">+86(China)</option>
+                                <option value="1">+1(Canada)</option>
+                                <option value="66">+66(Thailand)</option>
+                                <option value="63">+63(Philippines)</option>
+                            </select>
+                            <input type="tel" name="tel" id="tel">
+                        </td>
+                    </tr>
+
+                    <!-- Gender -->
+                    <tr>
+                        <th scope="row">Gender</th>
+                        <td>
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" id="male" value="male">
+
+                            <label for="female">Female</label>
+                            <input type="radio" name="gender" id="female" value="female">
+                        </td>
+                    </tr>
+
+
+                    <!-- text araa -->
+                    <tr>
+                        <th scope="row"><label for="text"></label></th>
+                        <td>
+                            <textarea name="text" id="text" cols="80" rows="10" wrap="hard" readonly >
+                                
+                                Article 1 (Purpose)
+These terms and conditions are provided by TDH Company Cyber Mall (hereinafter referred to as "Mall") operated by TDH Company Company (E-commerce Business Operator)
+In using Internet-related services (hereinafter referred to as "services"), the rights and intentions of cyber malls and users;
+The purpose is to define responsibilities and responsibilities.
+
+"E-commerce transactions using PC communication, wireless, etc. are subject to these terms and conditions unless they are contrary to their nature."
+It's good."
+
+                                Article 2 (Definitions)
+①The term "Mall" means a company of TDH Company Co., Ltd. to provide goods or services (hereinafter referred to as "goods, etc.") to users
+It refers to a virtual business establishment established to trade goods, etc. using information and communication facilities such as putters, etc. and an outlet
+It is also used in the sense of a business operator who operates a Russian cyber mall.
+
+②The term "user" means members and non-members who access the "Mall" and receive services provided by the "Mall" in accordance with these terms and conditions
+Say.
+
+③ The term "member" means a person who registered as a member by providing personal information to the "Mall", and continuously provides information of the "Mall"
+A person who is provided and who has continuous access to the services provided by the "Mall".
+
+④ The term "non-member" means a person who does not join a member and uses the services provided by the Mall.
+
+⑤ The term "reserve" means that a member purchases a product or participates in an event/promotion to promote the use of the "Mall"
+In this case, it refers to the score given to the members according to the company's set standards.
+
+⑥ The term "deposit" means that the customer orders the payment method designated by the company and then cancels or returns the order, and the company has to refund the order
+It refers to the amount of money that does not generate interest deposited with the company at the request of the customer.
+                 </textarea>
+                        </td>
+                    </tr>
+
+                    <!-- Btn -->
+                    <tr>
+                        <th colspan="2">
+                            <input type="reset" value="cancle">
+                            <input type="submit" value="submit">
+                        </th>
+                    </tr>
+                </table>
+
+            </form>
+        </div>
+    </section>
+
+    <section id="saying">
+        <div class="inner">
+            <h1>What They Are Saying</h1>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../img/logo1.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/logo2.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/logo3.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/logo4.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/logo5.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/Logo6.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/Logo7.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/logo8.jpeg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../img/logo9.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer id="footer">
+        <div class="inner">
+            <ul>
+                <li>
+                    <h1>WHO WE ARE</h1>
+                </li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Team</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <h1>Customer Service</h1>
+                </li>
+                <li><a href="community.html">FAQ</a></li>
+                <li><a href="community.html">1:1 Question</a></li>
+                <li><a href="community.html">Notice</a></li>
+                <li><a href="location.html">Shop</a></li>
+            </ul>
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i> </a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+            </ul>
+            <div class="contact">
+                <h2>Contact Us</h2>
+                <p>1-800-255-1342</p>
+                <p>Monday to Saturday 9AM to 10PM EST</p>
+            </div>
+
+            <address>
+                address: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, dolore.<br />
+                TEL : +82-2-2100-2114 FAX : +82-2-2100-7999
+            </address>
+
+            <p class="copy">Copyright &copy; 2021 ddddddddd Right reserved.</p>
+        </div>
+
+    </footer>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 5,
+            spaceBetween: 0,
+            slidesPerGroup: 1,
+            loop: true,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+</body>
+
+</html>

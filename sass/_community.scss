@@ -4,10 +4,15 @@ main {
 	.content {
 		.inner {
 			width: 1180px;
-            height: 1500px;
+            height: 1700px;
 			h1 {
 				font-size: 50px;
 				margin-bottom: 40px;
+				margin-top: 50px;
+			}
+			h2{
+				font-size: 50px;
+				margin-bottom: 20px;
 			}
 			.faq-pic {
 				width: 1180px;
@@ -18,34 +23,38 @@ main {
 					width: 100%;
 					height: 100%;
 					opacity: 0.5;
+					object-fit: cover;
 				}
 				i {
 					display: block;
 					position: relative;
-					top: -270px;
+					top: -350px;
 					font-size: 40px;
 					color: #fff;
 				}
 				p {
 					display: block;
 					position: relative;
-					top: -220px;
-					font: 20px/1 "Faustina";
+					top: -300px;
+					font: 30px/1 "Faustina";
 					color: #fff;
 				}
 				a {
-					width: 230px;
+					width: 200px;
 					height: 30px;
 					display: flex;
 					justify-content: center;
-					align-items: center;
 					position: relative;
-					top: -140px;
+					top: -190px;
 					left: 41%;
-					font: 20px/1 "Faustina";
+					font: 20px/1.2"Faustina";
 					color: #fff;
-					border: 1px solid #fff;
+					border: 2px solid #fff;
 					border-radius: 20px;
+					transition: 0.5s;
+					&:hover{
+						transform: scale(1.1);
+					}
 				}
 			}
 
@@ -68,14 +77,14 @@ main {
 			}
 			.faq {
 				width: 100%;
-				max-width: 100%;
+				height: 100%;
 				margin: 0 auto;
 				.faq-item {
                     height: 50px;
 					color: $navy;
                     .faq-item-header{
                         font: bold 25px/1 'Faustina';
-                        padding: 20px 0px;
+                        padding: 30px 0px;
                         line-height: 1.5;
                         display: flex;
 						justify-content: center;
@@ -94,14 +103,13 @@ main {
                     }
                     .faq-item-body{
 						margin: 0 auto;
-						width: 800px;
+						width: 900px;
                         max-height: 0;
                         overflow: hidden;
                         transition: 0.5s ease-in-out;
                         .faq-item-body-content{
                             font: 20px/1 'Faustina';
-                            text-align: left;
-                            background: rgba(5, 0, 73, 0.103);
+                            text-align: center;
                             padding: 20px 30px;
                             margin: 10px 0px;
                             line-height: 1.5rem;

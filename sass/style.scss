@@ -1,10 +1,12 @@
 @charset "UTF-8";
 @import "reset.scss";
 @import "color.scss";
+@import "font-family";
 @import "main.scss";
 @import "subIndex.scss";
 @import "member.scss";
 @import "community.scss";
+@import "join.scss";
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Faustina:wght@600&display=swap");
 // 'DM Serif Display';
 // 'Faustina';
@@ -37,3 +39,4 @@ body {
 		}
 	}
 }
+

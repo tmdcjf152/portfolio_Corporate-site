@@ -43,6 +43,7 @@
 				display: flex;
 				justify-content: center;
 				margin-bottom: 15%;
+				
 			}
 			.Planning {
 				height: 400px;
@@ -104,16 +105,15 @@
 				}
 			}
 		}.team_title{
-			width: 290px;
-			height: 130px;
-			background: $navy;
-			color: #fff;
-			display: flex;
-			justify-content: center;
-			align-items: center;
+			width: 270px;
+			height: 50px;
 			position: relative;
-			left: 36%;
-			border-radius: 50%;
+			left: 40%;
+			transform: translateY(-50%, -50%);
+			&:nth-of-type(1){
+				left: 38.5%;
+			}
+			
 		}
 	}
 }
