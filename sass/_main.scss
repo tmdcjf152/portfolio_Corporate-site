@@ -9,13 +9,13 @@
 		margin: 0 auto;
 		position: relative;
 		padding-top: 30px;
-		a {
+		a {			
 			display: flex;
 			justify-content: center;
 			font: bold 60px/1 "DM Serif Display";
 			overflow: hidden;
 		}
-		.menu {
+		.menuWeb {
 			#gnb {
 				position: absolute;
 				left: 0%;
@@ -54,6 +54,128 @@
 							transform: scale(1.2);
 						}
 					}
+				}
+			}
+		}
+		.menuMo {
+			width: 270px;
+			height: 100vh;
+			background: #fff;
+			padding: 35px 30px;
+			z-index: 10;
+			transition: 0.5s;
+			position: fixed;
+			top: 0;
+			left: -270px;
+			display: none;
+
+			&.on {
+				left: 0px;
+			}
+
+			h1 {
+				border-bottom: 1px solid $navy;
+				padding-bottom: 30px;
+				a {
+					display: block;
+					font: bold 24px/1 'Faustina';
+					color:$navy;
+					text-align: center;
+					
+					&:nth-of-type(2){
+						font-size: 15px;
+						float: left;
+						position: relative;
+						left: 25%;
+						margin-top: 10px;
+
+					}
+					&:nth-of-type(3){
+						font-size: 15px;
+						float: left;
+						position: relative;
+						left: 50%;
+						margin-top: 10px;
+
+					}
+				}
+				span {
+					font-size: 12px;
+					color: #aaa;
+				}
+			}
+
+			#gnbMo {
+				li {
+					a {
+						display: block;
+						width: 100%;
+						padding: 20px 0;
+						font: bold 14px/1 'Faustina';
+						color: #888;
+						text-align: center;
+						border-bottom: 1px solid #444;
+					}
+				}
+			}
+		}
+		.btnCall {
+			display: none;
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			right: 30px;
+			top: 50%;
+			transform: translateY(-50%);
+
+			&::before {
+				content: "";
+				display: block;
+				width: 100%;
+				height: 2px;
+				background: #000;
+				position: absolute;
+				top: 0;
+				left: 0;
+				transition: top 0.5s 0s, transform 0.5s 0.5s;
+			}
+			&::after {
+				content: "";
+				display: block;
+				width: 100%;
+				height: 2px;
+				background: #000;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				transition: bottom 0.5s 0s, transform 0.5s 0.5s;
+			}
+			span {
+				display: block;
+				width: 100%;
+				height: 2px;
+				background: #000;
+				position: absolute;
+				top: 50%;
+				margin-top: -1px;
+				left: 0;
+				text-indent: -9999px;
+				transition: all 1s;
+			}
+			&.on {
+				&::before {
+					top: 50%;
+					margin-top: -1px;
+					transform: rotate(45deg);
+				}
+				&::after {
+					bottom: 50%;
+					margin-bottom: -1px;
+					transform: rotate(-45deg);
+				}
+				span {
+					transform: translateX(100%);
+					opacity: 0;
 				}
 			}
 		}
@@ -251,7 +373,7 @@
 			&:nth-of-type(2) {
 				width: 50%;
 				height: 500px;
-				margin-top: 40px;
+				margin-top: 21px;
 				padding: 10px;
 				background: #fff;
 				text-align: center;
@@ -695,31 +817,47 @@
 // 테블릿구역ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 // 테블릿구역ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1179px) {
 	body {
 		#header {
 			.inner {
-				left: -90px;
+				width: 100%;
+				height: 100px;
+				left: 0px;
+				.menuWeb {
+					display: none;
+				}
+				.btnCall {
+					display: block;
+				}
+				.menuMo {
+					display: block;
+				}
 			}
-			.util {
-				position: relative;
-				left: 70%;
-			}
+		}
+
+		#visure {
+			overflow: hidden;
+			height: 600px;
 		}
 
 		#best {
 			height: 1300px;
 			.inner {
-				width: 70%;
+				width: 100%;
 				margin: 0 auto;
-				position: absolute;
-				left: 20%;
+				display: flex;
+				justify-content: center;
+				align-items: flex-start;
+				top: 15px;
 				h1 {
-					position: relative;
-					left: -30px;
 					font: bold 40px/1px "DM Serif Display";
+					position: absolute;
 				}
 				.wrap {
+					width: 100%;
+					margin-top: 80px;
+					margin-left: 22%;
 					article {
 						margin-left: 20px;
 					}
@@ -728,19 +866,18 @@
 		}
 
 		#story {
-			height: 1200px;
 			.inner {
-				width: 1023px;
+				width: 100%;
 				div {
 					&:nth-of-type(2) {
-						width: 45%;
+						width: 50%;
 						height: 400px;
-						margin-top: 40px;
-						padding: 10px;
+						margin-top: 30px;
+						padding: 0px;
 						background: #fff;
 						text-align: center;
 						position: relative;
-						left: 30px;
+						right: 50%;
 						h2 {
 							top: -80%;
 						}
@@ -754,10 +891,11 @@
 					}
 
 					&:nth-of-type(3) {
-						width: 45%;
+						width: 50%;
 						height: 400px;
-						top: 540px;
-						right: 50px;
+						top: 530px;
+						left: 50%;
+						padding: 0;
 						h2 {
 							top: -80%;
 						}
@@ -771,16 +909,8 @@
 							transition: 1s;
 						}
 						a {
-							display: block;
-							width: 200px;
-							height: 30px;
-							border: 1px solid $navy;
-							font: 15px/28px "Faustina";
-							color: #000;
-							text-align: center;
-							position: relative;
-							left: 30%;
-							top: -61%;
+							right: 60%;
+							top: -60%;
 							margin-bottom: 20px;
 							transition: 1s;
 						}
@@ -817,14 +947,23 @@
 		#new_item {
 			height: 1300px;
 			.inner {
-				width: 70%;
+				width: 100%;
 				margin: 0 auto;
-				position: absolute;
-				left: 20%;
+				display: flex;
+				justify-content: center;
+				align-items: flex-start;
+				top: 15px;
 				h1 {
-					position: relative;
-					left: -30px;
 					font: bold 40px/1px "DM Serif Display";
+					position: absolute;
+				}
+				.wrap {
+					width: 100%;
+					margin-top: 80px;
+					margin-left: 22%;
+					article {
+						margin-left: 20px;
+					}
 				}
 			}
 		}
@@ -869,9 +1008,9 @@
 				ul {
 					float: left;
 					margin-top: 30px;
-					margin-left:70px;
+					margin-left: 70px;
 					h1 {
-						font: bold 15px/1px "DM Serif Display";
+						font: bold 20px/1px "DM Serif Display";
 						margin-bottom: 10px;
 					}
 					a {
@@ -884,13 +1023,13 @@
 					}
 					&:nth-of-type(2) {
 						position: relative;
-						left: 10%;
+						left: 15%;
 					}
 					&:nth-of-type(3) {
 						display: block;
 						position: relative;
 						float: right;
-						left: 90px;
+						left: 20%;
 						bottom: 10px;
 						font-size: 40px;
 					}
@@ -899,7 +1038,7 @@
 					width: 100%;
 					position: relative;
 					left: -70%;
-					top: 100px;
+					top: 40%;
 				}
 				.copy {
 					position: relative;
@@ -909,7 +1048,7 @@
 				.contact {
 					width: 100%;
 					position: relative;
-					top: 80px;
+					top: 30%;
 					left: -70%;
 					h2 {
 						font: bold 30px/1 "DM Serif Display";
@@ -924,4 +1063,3 @@
 		}
 	}
 }
-

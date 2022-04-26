@@ -1,26 +1,12 @@
-// index.html 이미지 시퀸스 
-const main = document.querySelector("main");
+const btnCall = document.querySelector(".btnCall"); 
+const menuMo = document.querySelector(".menuMo"); 
 
-let tags = "";
+btnCall.addEventListener("click",(e)=>{
+    e.preventDefault();
 
-for (let i = 0; i < 397; i++) {
-    tags += `<article><img src="img/index/pic${i}.jpg"></article>`
-};
+    let isOn = btnCall.classList.contains("on");
+    (isOn) ? btnCall.classList.remove("on") : btnCall.classList.add("on");
 
-main.innerHTML = tags;
-
-const items = main.querySelectorAll("article");
-
-window.addEventListener("mousemove", (e) => {
-    let posX = e.pageX;
-    let totalWid = window.innerWidth;
-    let percent = (posX / totalWid) * 397;
-
-    percent = parseInt(percent);
-
-    for (let el of items) {
-        el.style.display = "none";
-    }
-    items[percent].style.display = "block";
-
+    let isOnM = menuMo.classList.contains("on");
+    (isOnM) ? menuMo.classList.remove("on") : menuMo.classList.add("on");
 })
