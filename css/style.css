@@ -21,31 +21,32 @@ a {
   opacity: 0;
 }
 
-#header {
+body #header {
   width: 100%;
 }
-#header .inner {
+body #header .inner {
   width: 1180px;
   height: 120px;
   margin: 0 auto;
   position: relative;
   padding-top: 30px;
 }
-#header .inner a {
+body #header .inner a {
   display: flex;
   justify-content: center;
   font: bold 60px/1 "DM Serif Display";
+  color: rgb(20, 1, 73);
   overflow: hidden;
 }
-#header .inner .menuWeb #gnb {
+body #header .inner .menuWeb #gnb {
   position: absolute;
   left: 0%;
   bottom: 0;
 }
-#header .inner .menuWeb #gnb li {
+body #header .inner .menuWeb #gnb li {
   float: left;
 }
-#header .inner .menuWeb #gnb li a {
+body #header .inner .menuWeb #gnb li a {
   display: block;
   padding: 0px 40px;
   font: bold 20px/1 "Faustina";
@@ -56,28 +57,29 @@ a {
   overflow: hidden;
   transition: 0.5s;
 }
-#header .inner .menuWeb #gnb li a:hover {
+body #header .inner .menuWeb #gnb li a:hover {
   transform: scale(1.2);
 }
-#header .inner .menuWeb .util {
+body #header .inner .menuWeb .util {
+  display: flex;
   position: absolute;
-  right: 10px;
+  left: 90%;
   top: 15px;
 }
-#header .inner .menuWeb .util li {
+body #header .inner .menuWeb .util li {
   float: left;
 }
-#header .inner .menuWeb .util li a {
+body #header .inner .menuWeb .util li a {
   position: relative;
   padding: 8px;
   font: 15px/1 "apple";
   color: #000;
   transition: 0.5s;
 }
-#header .inner .menuWeb .util li a:hover {
+body #header .inner .menuWeb .util li a:hover {
   transform: scale(1.2);
 }
-#header .inner .menuMo {
+body #header .inner .menuMo {
   width: 270px;
   height: 100vh;
   background: #fff;
@@ -89,38 +91,38 @@ a {
   left: -270px;
   display: none;
 }
-#header .inner .menuMo.on {
+body #header .inner .menuMo.on {
   left: 0px;
 }
-#header .inner .menuMo h1 {
+body #header .inner .menuMo h1 {
   border-bottom: 1px solid rgb(20, 1, 73);
   padding-bottom: 30px;
 }
-#header .inner .menuMo h1 a {
+body #header .inner .menuMo h1 a {
   display: block;
   font: bold 24px/1 "Faustina";
   color: rgb(20, 1, 73);
   text-align: center;
 }
-#header .inner .menuMo h1 a:nth-of-type(2) {
+body #header .inner .menuMo h1 a:nth-of-type(2) {
   font-size: 15px;
   float: left;
   position: relative;
   left: 25%;
   margin-top: 10px;
 }
-#header .inner .menuMo h1 a:nth-of-type(3) {
+body #header .inner .menuMo h1 a:nth-of-type(3) {
   font-size: 15px;
   float: left;
   position: relative;
   left: 50%;
   margin-top: 10px;
 }
-#header .inner .menuMo h1 span {
+body #header .inner .menuMo h1 span {
   font-size: 12px;
   color: #aaa;
 }
-#header .inner .menuMo #gnbMo li a {
+body #header .inner .menuMo #gnbMo li a {
   display: block;
   width: 100%;
   padding: 20px 0;
@@ -129,7 +131,7 @@ a {
   text-align: center;
   border-bottom: 1px solid #444;
 }
-#header .inner .btnCall {
+body #header .inner .btnCall {
   display: none;
   width: 20px;
   height: 20px;
@@ -138,7 +140,7 @@ a {
   top: 50%;
   transform: translateY(-50%);
 }
-#header .inner .btnCall::before {
+body #header .inner .btnCall::before {
   content: "";
   display: block;
   width: 100%;
@@ -149,7 +151,7 @@ a {
   left: 0;
   transition: top 0.5s 0s, transform 0.5s 0.5s;
 }
-#header .inner .btnCall::after {
+body #header .inner .btnCall::after {
   content: "";
   display: block;
   width: 100%;
@@ -160,7 +162,7 @@ a {
   left: 0;
   transition: bottom 0.5s 0s, transform 0.5s 0.5s;
 }
-#header .inner .btnCall span {
+body #header .inner .btnCall span {
   display: block;
   width: 100%;
   height: 2px;
@@ -172,22 +174,21 @@ a {
   text-indent: -9999px;
   transition: all 1s;
 }
-#header .inner .btnCall.on::before {
+body #header .inner .btnCall.on::before {
   top: 50%;
   margin-top: -1px;
   transform: rotate(45deg);
 }
-#header .inner .btnCall.on::after {
+body #header .inner .btnCall.on::after {
   bottom: 50%;
   margin-bottom: -1px;
   transform: rotate(-45deg);
 }
-#header .inner .btnCall.on span {
+body #header .inner .btnCall.on span {
   transform: translateX(100%);
   opacity: 0;
 }
-
-#visure {
+body #visure {
   width: 100%;
   height: 700px;
   overflow: hidden;
@@ -195,24 +196,23 @@ a {
   top: 70px;
   margin-bottom: 150px;
 }
-#visure video {
+body #visure video {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-#best {
+body #best {
   width: 100%;
   height: 700px;
   overflow: hidden;
 }
-#best .inner {
+body #best .inner {
   width: 1180px;
   margin: 0 auto;
   position: relative;
 }
-#best .inner h1 {
+body #best .inner h1 {
   font: bold 35px/1 "DM Serif Display";
   color: rgb(20, 1, 73);
   text-decoration: underline;
@@ -220,10 +220,10 @@ a {
   justify-content: center;
   margin-bottom: 50px;
 }
-#best .inner .wrap {
+body #best .inner .wrap {
   width: 100%;
 }
-#best .inner .wrap article {
+body #best .inner .wrap article {
   width: 280px;
   margin-bottom: 100px;
   margin-right: 20px;
@@ -231,29 +231,29 @@ a {
   border: 1px solid rgb(20, 1, 73);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
-#best .inner .wrap article:last-of-type {
+body #best .inner .wrap article:last-of-type {
   margin-right: 0px;
 }
-#best .inner .wrap article .pic {
+body #best .inner .wrap article .pic {
   width: 100%;
   height: 350px;
   overflow: hidden;
 }
-#best .inner .wrap article .pic img {
+body #best .inner .wrap article .pic img {
   width: 100%;
   height: 100%;
   background-size: auto;
   background: #000;
   transition: 1s;
 }
-#best .inner .wrap article:hover .text {
+body #best .inner .wrap article:hover .text {
   opacity: 1;
   color: rgb(20, 1, 73);
 }
-#best .inner .wrap article:hover img {
+body #best .inner .wrap article:hover img {
   opacity: 0.4;
 }
-#best .inner .wrap article .text {
+body #best .inner .wrap article .text {
   height: 1px;
   bottom: 320px;
   padding: 10px;
@@ -263,23 +263,23 @@ a {
   opacity: 0;
   transition: 1s;
 }
-#best .inner .wrap article .pic_text {
+body #best .inner .wrap article .pic_text {
   display: block;
 }
-#best .inner .wrap article .pic_text p {
+body #best .inner .wrap article .pic_text p {
   text-align: center;
 }
-#best .inner .wrap article .pic_text .item_name {
+body #best .inner .wrap article .pic_text .item_name {
   font: bold 22px/1 "Faustina";
   color: rgb(20, 1, 73);
   margin-bottom: 20px;
 }
-#best .inner .wrap article .pic_text .item_case {
+body #best .inner .wrap article .pic_text .item_case {
   font: 15px/1 "Faustina";
   color: rgb(20, 1, 73);
   margin-bottom: 20px;
 }
-#best .inner .wrap article .pic_text a {
+body #best .inner .wrap article .pic_text a {
   display: block;
   width: 200px;
   height: 30px;
@@ -292,22 +292,21 @@ a {
   left: 13%;
   transition: 0.5s;
 }
-#best .inner .wrap article .pic_text a:hover {
+body #best .inner .wrap article .pic_text a:hover {
   transform: scale(1.1);
 }
-
-#story {
+body #story {
   width: 100%;
   height: 1200px;
   overflow: hidden;
 }
-#story .inner {
+body #story .inner {
   width: 1180px;
   margin: 0 auto;
   position: relative;
   top: 50px;
 }
-#story .inner h1 {
+body #story .inner h1 {
   display: flex;
   justify-content: center;
   font: bold 40px/1px "DM Serif Display";
@@ -315,19 +314,19 @@ a {
   text-decoration: underline;
   margin-bottom: 50px;
 }
-#story .inner div:nth-of-type(1) {
+body #story .inner div:nth-of-type(1) {
   height: 450px;
   margin-top: 30px;
-  background: #fff;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
-#story .inner div:nth-of-type(1) img {
+body #story .inner div:nth-of-type(1) img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  filter: grayscale(1);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
-#story .inner div:nth-of-type(1) h2 {
+body #story .inner div:nth-of-type(1) h2 {
   text-align: center;
   font: bold 50px/1 "DM Serif Display";
   color: #fff;
@@ -335,7 +334,7 @@ a {
   top: -400px;
   transition: 1s;
 }
-#story .inner div:nth-of-type(1) p {
+body #story .inner div:nth-of-type(1) p {
   padding: 0px 200px;
   text-align: center;
   font: bold 20px/30px "Faustina";
@@ -344,12 +343,12 @@ a {
   top: -350px;
   transition: 1s;
 }
-#story .inner div:nth-of-type(1) a {
+body #story .inner div:nth-of-type(1) a {
   display: block;
   width: 200px;
   height: 30px;
   border: 1px solid #fff;
-  font: 15px/28px "Faustina";
+  font: 20px/25px "Faustina";
   color: #fff;
   text-align: center;
   position: relative;
@@ -357,148 +356,96 @@ a {
   top: -60%;
   transition: 1s;
 }
-#story .inner div:nth-of-type(1) img {
+body #story .inner div:nth-of-type(1) img {
   width: 100%;
   transition: 1s;
 }
-#story .inner div:nth-of-type(1):hover img {
-  opacity: 0.3;
-}
-#story .inner div:hover h2 {
-  color: rgb(20, 1, 73);
-}
-#story .inner div:hover p {
-  color: rgb(20, 1, 73);
-}
-#story .inner div:hover a {
-  color: rgb(20, 1, 73);
-  border: 1px solid rgb(20, 1, 73);
-}
-#story .inner div:nth-of-type(2) {
-  width: 50%;
-  height: 500px;
-  margin-top: 21px;
-  padding: 10px;
-  background: #fff;
+body #story .inner div:nth-of-type(2) {
+  width: 49%;
+  height: 100%;
+  margin-top: 20px;
   text-align: center;
-  position: relative;
-  left: -10px;
 }
-#story .inner div:nth-of-type(2) h2 {
-  font: bold 35px/1 "DM Serif Display";
-  position: relative;
-  top: -75%;
-}
-#story .inner div:nth-of-type(2) p {
-  position: relative;
-  top: -70%;
-  left: -99%;
-  font: bold 22px/30px "Faustina";
-  color: rgb(20, 1, 73);
-  padding: 0px 30px;
-  opacity: 0;
+body #story .inner div:nth-of-type(2) img {
+  width: 100%;
   transition: 1s;
+  filter: grayscale(1);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
-#story .inner div:nth-of-type(2) a {
+body #story .inner div:nth-of-type(2) h2 {
+  font: 35px/1 "DM Serif Display";
+  margin-bottom: 10px;
+}
+body #story .inner div:nth-of-type(2) a {
+  font: 20px/1.2 "Faustina";
+  color: rgb(20, 1, 73);
   display: block;
   width: 200px;
   height: 30px;
-  border: 1px solid rgb(20, 1, 73);
-  font: 15px/28px "Faustina";
-  color: rgb(20, 1, 73);
-  text-align: center;
   position: relative;
   left: 30%;
-  top: -60%;
-  margin-bottom: 20px;
-  transition: 1s;
+  border: 1px solid #000;
+  transition: 0.5s;
+  margin-bottom: 15px;
 }
-#story .inner div:nth-of-type(2) img {
-  width: 100%;
-  transition: 1s;
-}
-#story .inner div:nth-of-type(2):hover img {
-  opacity: 0.3;
-}
-#story .inner div:nth-of-type(2):hover a {
-  transform: scale(1.1);
-}
-#story .inner div:nth-of-type(2):hover p {
-  top: -70%;
-  left: 0;
-  opacity: 1;
-}
-#story .inner div:nth-of-type(3) {
-  width: 50%;
-  height: 500px;
-  padding: 10px;
-  background: #fff;
+body #story .inner div:nth-of-type(3) {
+  width: 49%;
   position: absolute;
   top: 520px;
-  right: -10px;
+  right: 0px;
   text-align: center;
 }
-#story .inner div:nth-of-type(3) h2 {
-  font: bold 35px/1 "DM Serif Display";
-  position: relative;
-  top: -75%;
-}
-#story .inner div:nth-of-type(3) p {
-  position: relative;
-  top: -70%;
-  right: -99%;
-  font: bold 22px/1 "Faustina";
-  color: rgb(20, 1, 73);
-  padding: 0px 30px;
-  opacity: 0;
+body #story .inner div:nth-of-type(3) img {
+  width: 100%;
   transition: 1s;
+  filter: grayscale(1);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
-#story .inner div:nth-of-type(3) a {
+body #story .inner div:nth-of-type(3) h2 {
+  font: 35px/1 "DM Serif Display";
+  margin-bottom: 10px;
+}
+body #story .inner div:nth-of-type(3) a {
+  font: 20px/1.2 "Faustina";
+  color: rgb(20, 1, 73);
   display: block;
   width: 200px;
   height: 30px;
-  border: 1px solid rgb(20, 1, 73);
-  font: 15px/28px "Faustina";
-  color: #000;
-  text-align: center;
   position: relative;
   left: 30%;
-  top: -55%;
-  margin-bottom: 20px;
-  transition: 1s;
+  border: 1px solid #000;
 }
-#story .inner div:nth-of-type(3) img {
-  width: 100%;
-  transition: 1s;
+body #story .inner div:hover h2 {
+  color: rgb(20, 1, 73);
 }
-#story .inner div:nth-of-type(3):hover a {
-  transform: scale(1.1);
+body #story .inner div:hover p {
+  color: rgb(20, 1, 73);
+}
+body #story .inner div:hover a {
   color: rgb(20, 1, 73);
   border: 1px solid rgb(20, 1, 73);
+  transform: scale(1.1);
+  transition: 0.5s;
 }
-#story .inner div:nth-of-type(3):hover img {
-  opacity: 0.3;
+body #story .inner div:hover img {
+  filter: grayscale(0);
 }
-#story .inner div:hover p {
-  right: 0;
-  opacity: 1;
-}
-
-#banner {
+body #banner {
   width: 100%;
   height: 300px;
   background: rgb(20, 1, 73);
   margin-bottom: 100px;
   margin-top: 30px;
   padding: 20px;
+  overflow: hidden;
 }
-#banner:hover h1 {
+body #banner:hover h1 {
   opacity: 1;
 }
-#banner:hover p {
+body #banner:hover p {
   opacity: 1;
 }
-#banner h1 {
+body #banner h1 {
   display: block;
   text-align: center;
   font: bold 50px/1 "DM Serif Display";
@@ -506,26 +453,25 @@ a {
   opacity: 0;
   transition: 1s;
 }
-#banner p {
+body #banner p {
   padding: 0px 10%;
   text-align: center;
-  font: 20px/2 "Faustina";
+  font: 18px/2 "Faustina";
   color: #fff;
   opacity: 0;
   transition: 1s;
 }
-
-#new_item {
+body #new_item {
   width: 100%;
   height: 700px;
   overflow: hidden;
 }
-#new_item .inner {
+body #new_item .inner {
   width: 1180px;
   margin: 0 auto;
   position: relative;
 }
-#new_item .inner h1 {
+body #new_item .inner h1 {
   font: bold 35px/1 "DM Serif Display";
   color: rgb(20, 1, 73);
   text-decoration: underline;
@@ -533,10 +479,10 @@ a {
   justify-content: center;
   margin-bottom: 50px;
 }
-#new_item .inner .wrap {
+body #new_item .inner .wrap {
   width: 100%;
 }
-#new_item .inner .wrap article {
+body #new_item .inner .wrap article {
   width: 280px;
   margin-bottom: 100px;
   margin-right: 20px;
@@ -544,28 +490,28 @@ a {
   border: 1px solid rgb(20, 1, 73);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
-#new_item .inner .wrap article:last-of-type {
+body #new_item .inner .wrap article:last-of-type {
   margin-right: 0px;
 }
-#new_item .inner .wrap article .pic {
+body #new_item .inner .wrap article .pic {
   width: 100%;
   height: 350px;
   overflow: hidden;
 }
-#new_item .inner .wrap article .pic img {
+body #new_item .inner .wrap article .pic img {
   width: 100%;
   height: 100%;
   background-size: auto;
   transition: 1s;
 }
-#new_item .inner .wrap article:hover .text {
+body #new_item .inner .wrap article:hover .text {
   opacity: 1;
   color: rgb(20, 1, 73);
 }
-#new_item .inner .wrap article:hover img {
+body #new_item .inner .wrap article:hover img {
   opacity: 0.4;
 }
-#new_item .inner .wrap article .text {
+body #new_item .inner .wrap article .text {
   height: 1px;
   bottom: 320px;
   padding: 10px;
@@ -576,23 +522,23 @@ a {
   opacity: 0;
   transition: 1s;
 }
-#new_item .inner .wrap article .pic_text {
+body #new_item .inner .wrap article .pic_text {
   display: block;
 }
-#new_item .inner .wrap article .pic_text p {
+body #new_item .inner .wrap article .pic_text p {
   text-align: center;
 }
-#new_item .inner .wrap article .pic_text .item_name {
+body #new_item .inner .wrap article .pic_text .item_name {
   font: bold 22px/1 "Faustina";
   color: rgb(20, 1, 73);
   margin-bottom: 20px;
 }
-#new_item .inner .wrap article .pic_text .item_case {
+body #new_item .inner .wrap article .pic_text .item_case {
   font: 15px/1 "Faustina";
   color: rgb(20, 1, 73);
   margin-bottom: 20px;
 }
-#new_item .inner .wrap article .pic_text a {
+body #new_item .inner .wrap article .pic_text a {
   display: block;
   width: 200px;
   height: 30px;
@@ -605,23 +551,22 @@ a {
   left: 13%;
   transition: 0.5s;
 }
-#new_item .inner .wrap article .pic_text a:hover {
+body #new_item .inner .wrap article .pic_text a:hover {
   transform: scale(1.1);
 }
-
-#direct {
+body #direct {
   width: 100%;
   height: 1450px;
   overflow: hidden;
 }
-#direct .inner {
+body #direct .inner {
   width: 1180px;
   height: 100%;
   margin: 0 auto;
   position: relative;
   top: 50px;
 }
-#direct .inner article {
+body #direct .inner article {
   width: 48%;
   height: 500px;
   margin: 20px;
@@ -629,22 +574,23 @@ a {
   text-align: center;
   float: left;
 }
-#direct .inner h1 {
+body #direct .inner h1 {
   font: bold 30px/1 "DM Serif Display";
   color: rgb(20, 1, 73);
   position: relative;
   top: 100px;
 }
-#direct .inner p {
+body #direct .inner p {
   font: 20px/1 "Faustina";
   color: rgb(20, 1, 73);
   position: relative;
   top: 110px;
 }
-#direct .inner a {
+body #direct .inner a {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   width: 300px;
   height: 40px;
   font: bold 20px/1 "Faustina";
@@ -654,62 +600,60 @@ a {
   top: 150px;
   left: 20%;
 }
-#direct .inner .direct_pic {
+body #direct .inner .direct_pic {
   width: 45%;
   height: 600px;
   position: relative;
 }
-#direct .inner .direct_pic img {
+body #direct .inner .direct_pic img {
   width: 100%;
   height: 100%;
 }
-
-#greeting {
+body #greeting {
   width: 100%;
   height: 100%;
   overflow: hidden;
   color: rgb(20, 1, 73);
 }
-#greeting .inner {
+body #greeting .inner {
   width: 1180px;
   height: 100%;
   margin: 0 auto;
   position: relative;
   text-align: center;
 }
-#greeting .inner h1 {
+body #greeting .inner h1 {
   display: flex;
   justify-content: center;
   font: bold 70px/1 "DM Serif Display";
 }
-#greeting .inner h4 {
+body #greeting .inner h4 {
   font: 14px/1 "DM Serif Display";
 }
-#greeting .inner p {
+body #greeting .inner p {
   font: 20px/30px "Faustina";
   margin-top: 20px;
 }
-#greeting .inner .sign {
+body #greeting .inner .sign {
   width: 400px;
   height: 150px;
   margin-bottom: 150px;
 }
-
-#saying {
+body #saying {
   width: 100%;
   height: 200px;
   color: rgb(20, 1, 73);
 }
-#saying .inner h1 {
+body #saying .inner h1 {
   text-align: center;
   font: bold 40px/1 "DM Serif Display";
   margin-bottom: 50px;
 }
-#saying .inner .swiper {
+body #saying .inner .swiper {
   width: 100%;
-  height: 350px;
+  height: 300px;
 }
-#saying .inner .swiper .swiper-slide {
+body #saying .inner .swiper .swiper-slide {
   text-align: center;
   font-size: 18px;
   /* Center slide text vertically */
@@ -717,82 +661,76 @@ a {
   justify-content: center;
   align-items: center;
 }
-#saying .inner .swiper .swiper-slide img {
+body #saying .inner .swiper .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-#footer {
+body #footer {
   width: 100%;
-  overflow: hidden;
-  border-top: 1px solid #000;
-}
-#footer .inner {
-  width: 1180px;
   height: 300px;
+  border-top: 1px solid #000;
+  margin-top: 190px;
+  overflow: hidden;
+}
+body #footer .inner {
+  width: 1180px;
+  height: 100%;
   margin: 0 auto;
 }
-#footer .inner::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-#footer .inner ul {
+body #footer .inner ul {
+  width: 100%;
   float: left;
   margin-top: 30px;
   margin-left: 150px;
 }
-#footer .inner ul h1 {
+body #footer .inner ul h1 {
+  position: relative;
+  left: -30px;
   font: bold 20px/1px "DM Serif Display";
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
-#footer .inner ul a {
+body #footer .inner ul a {
+  position: relative;
+  left: -25px;
   font: 18px/30px "Faustina";
-  color: #000;
+  color: rgb(20, 1, 73);
 }
-#footer .inner ul:nth-of-type(1) {
+body #footer .inner ul:nth-of-type(1) {
   position: relative;
-  left: 15%;
+  left: 0%;
 }
-#footer .inner ul:nth-of-type(2) {
+body #footer .inner ul:nth-of-type(2) {
   position: relative;
-  left: 10%;
+  top: -100px;
+  left: 20%;
 }
-#footer .inner ul:nth-of-type(3) {
-  display: block;
+body #footer .inner ul:nth-of-type(3) {
   position: relative;
-  float: right;
-  left: 90px;
-  bottom: 10px;
-  font-size: 40px;
+  top: -260px;
+  left: 40%;
 }
-#footer .inner address {
+body #footer .inner .contact {
   width: 100%;
   position: relative;
-  left: -55%;
-  top: 140px;
+  top: -370px;
+  left: 70%;
 }
-#footer .inner .copy {
-  position: relative;
-  top: 190px;
-  left: -150px;
-}
-#footer .inner .contact {
-  width: 100%;
-  position: relative;
-  top: 80px;
-  left: -650px;
-}
-#footer .inner .contact h2 {
+body #footer .inner .contact h2 {
   font: bold 30px/1 "DM Serif Display";
   margin-bottom: 10px;
   text-decoration: underline;
 }
-#footer .inner .contact p {
+body #footer .inner .contact p {
   font: 20px/1 "Faustina";
+}
+body #footer .inner .contact address {
+  font: 15px/1 "Faustina";
+}
+body #footer .inner .contact .copy {
+  font: 13px/1 "Faustina";
 }
 
 @media screen and (max-width: 1179px) {
@@ -832,7 +770,10 @@ a {
   body #best .inner .wrap {
     width: 100%;
     margin-top: 80px;
-    margin-left: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
   body #best .inner .wrap article {
     margin-left: 20px;
@@ -840,66 +781,86 @@ a {
   body #story .inner {
     width: 100%;
   }
-  body #story .inner div:nth-of-type(2) {
+  body #story .inner div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  body #story .inner div h2 {
+    display: block;
+    width: 100%;
+  }
+  body #story .inner div:nth-of-type(1) {
     width: 50%;
-    height: 400px;
+    height: 100%;
     margin-top: 30px;
     padding: 0px;
-    background: #fff;
     text-align: center;
     position: relative;
-    right: 50%;
+    right: -5%;
+    float: left;
+  }
+  body #story .inner div:nth-of-type(1) h2 {
+    top: 14px;
+    font-size: 40px;
+    color: #000;
+  }
+  body #story .inner div:nth-of-type(1) a {
+    top: 45px;
+    left: 0px;
+    color: #000;
+    border: 1px solid #000;
+  }
+  body #story .inner div:nth-of-type(2) {
+    width: 37%;
+    height: 100%;
+    margin-top: 30px;
+    padding: 0px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    right: -8%;
+    margin-right: 20px;
   }
   body #story .inner div:nth-of-type(2) h2 {
-    top: -80%;
-  }
-  body #story .inner div:nth-of-type(2) p {
-    top: -70%;
-    font: bold 18px/20px "Faustina";
+    font-size: 25px;
   }
   body #story .inner div:nth-of-type(2) a {
-    top: -60%;
+    position: relative;
+    left: 0;
+    margin-bottom: 20px;
   }
   body #story .inner div:nth-of-type(3) {
-    width: 50%;
-    height: 400px;
-    top: 530px;
-    left: 50%;
-    padding: 0;
+    width: 37%;
+    height: 100%;
+    margin-top: 30px;
+    padding: 0px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    right: -8%;
   }
   body #story .inner div:nth-of-type(3) h2 {
-    top: -80%;
-  }
-  body #story .inner div:nth-of-type(3) p {
-    top: -70%;
-    right: -99%;
-    font: bold 18px/1 "Faustina";
-    color: rgb(20, 1, 73);
-    padding: 0px 30px;
-    opacity: 0;
-    transition: 1s;
+    font-size: 25px;
   }
   body #story .inner div:nth-of-type(3) a {
-    right: 60%;
-    top: -60%;
-    margin-bottom: 20px;
-    transition: 1s;
+    position: relative;
+    left: 0px;
   }
-  body #story .inner div:nth-of-type(3) img {
-    width: 100%;
-    transition: 1s;
-  }
-  body #story .inner div:nth-of-type(3):hover a {
+  body #story .inner div:hover a {
     transform: scale(1.1);
     color: rgb(20, 1, 73);
     border: 1px solid rgb(20, 1, 73);
   }
-  body #story .inner div:nth-of-type(3):hover img {
-    opacity: 0.3;
-  }
-  body #story .inner div:hover p {
+  body #story .inner:hover p {
     right: 0;
     opacity: 1;
+  }
+  body #banner {
+    width: 100%;
+    height: 100%;
   }
   body #banner h1 {
     font: bold 35px/1 "DM Serif Display";
@@ -925,152 +886,465 @@ a {
   body #new_item .inner .wrap {
     width: 100%;
     margin-top: 80px;
-    margin-left: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
   body #new_item .inner .wrap article {
     margin-left: 20px;
   }
   body #direct .inner {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
   body #direct .inner article {
     width: 45%;
   }
-  body #direct .inner article h1 {
-    position: relative;
-    left: 20px;
-  }
-  body #direct .inner article p {
-    position: relative;
-    left: 20px;
+  body #direct .inner article a {
+    left: 15%;
   }
   body #greeting .inner {
-    width: 900px;
+    width: 900%;
   }
   body #saying {
-    height: 290px;
+    height: 150px;
   }
   body #saying .inner .swiper {
     height: 250px;
     margin-bottom: 0;
   }
-  body #footer .inner {
-    width: 70%;
+  body #footer {
+    width: 100%;
     height: 300px;
+    border-top: 1px solid #000;
+    margin-top: 190px;
+    overflow: hidden;
+  }
+  body #footer .inner {
+    width: 1180px;
+    height: 100%;
+    margin: 0 auto;
   }
   body #footer .inner ul {
+    width: 100%;
     float: left;
     margin-top: 30px;
-    margin-left: 70px;
+    margin-left: 150px;
   }
   body #footer .inner ul h1 {
+    position: relative;
+    left: -30px;
     font: bold 20px/1px "DM Serif Display";
     margin-bottom: 10px;
   }
   body #footer .inner ul a {
-    font: 15px/30px "Faustina";
-    color: #000;
+    position: relative;
+    left: -25px;
+    font: 18px/30px "Faustina";
+    color: rgb(20, 1, 73);
   }
   body #footer .inner ul:nth-of-type(1) {
     position: relative;
-    left: 15%;
+    left: 0%;
   }
   body #footer .inner ul:nth-of-type(2) {
     position: relative;
-    left: 15%;
+    top: -100px;
+    left: 20%;
   }
   body #footer .inner ul:nth-of-type(3) {
-    display: block;
     position: relative;
-    float: right;
-    left: 20%;
-    bottom: 10px;
-    font-size: 40px;
-  }
-  body #footer .inner address {
-    width: 100%;
-    position: relative;
-    left: -70%;
-    top: 40%;
-  }
-  body #footer .inner .copy {
-    position: relative;
-    top: 190px;
-    left: -150px;
+    top: -260px;
+    left: 40%;
   }
   body #footer .inner .contact {
     width: 100%;
     position: relative;
-    top: 30%;
-    left: -70%;
+    top: -230px;
+    left: 1%;
   }
   body #footer .inner .contact h2 {
-    font: bold 30px/1 "DM Serif Display";
+    font: bold 20px/1 "DM Serif Display";
     margin-bottom: 10px;
     text-decoration: underline;
   }
   body #footer .inner .contact p {
-    font: 20px/1 "Faustina";
+    font: 15px/1 "Faustina";
   }
 }
-#header {
-  width: 100%;
+@media screen and (max-width: 820px) {
+  body #header .inner {
+    width: 100%;
+    height: 100px;
+    left: 0px;
+  }
+  body #header .inner .menuWeb {
+    display: none;
+  }
+  body #header .inner .btnCall {
+    display: block;
+  }
+  body #header .inner .menuMo {
+    display: block;
+  }
+  body #visure {
+    overflow: hidden;
+    height: 600px;
+  }
+  body #best {
+    height: 1300px;
+  }
+  body #best .inner {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    top: 15px;
+  }
+  body #best .inner h1 {
+    font: bold 40px/1px "DM Serif Display";
+    position: absolute;
+  }
+  body #best .inner .wrap {
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  body #best .inner .wrap article {
+    margin-left: 20px;
+  }
+  body #story .inner {
+    width: 100%;
+  }
+  body #story .inner div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  body #story .inner div h2 {
+    display: block;
+    width: 100%;
+  }
+  body #story .inner div:nth-of-type(1) {
+    width: 50%;
+    height: 100%;
+    margin-top: 30px;
+    padding: 0px;
+    text-align: center;
+    position: relative;
+    right: -5%;
+    float: left;
+  }
+  body #story .inner div:nth-of-type(1) h2 {
+    top: 14px;
+    font-size: 40px;
+    color: #000;
+  }
+  body #story .inner div:nth-of-type(1) a {
+    top: 45px;
+    left: 0px;
+    color: #000;
+    border: 1px solid #000;
+  }
+  body #story .inner div:nth-of-type(2) {
+    width: 37%;
+    height: 100%;
+    margin-top: 30px;
+    padding: 0px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    right: -8%;
+    margin-right: 20px;
+  }
+  body #story .inner div:nth-of-type(2) h2 {
+    font-size: 25px;
+  }
+  body #story .inner div:nth-of-type(2) a {
+    position: relative;
+    left: 0;
+    margin-bottom: 20px;
+  }
+  body #story .inner div:nth-of-type(3) {
+    width: 37%;
+    height: 100%;
+    margin-top: 30px;
+    padding: 0px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    right: -8%;
+  }
+  body #story .inner div:nth-of-type(3) h2 {
+    font-size: 25px;
+  }
+  body #story .inner div:nth-of-type(3) a {
+    position: relative;
+    left: 0px;
+  }
+  body #story .inner div:hover a {
+    transform: scale(1.1);
+    color: rgb(20, 1, 73);
+    border: 1px solid rgb(20, 1, 73);
+  }
+  body #story .inner:hover p {
+    right: 0;
+    opacity: 1;
+  }
+  body #banner {
+    width: 100%;
+    height: 100%;
+  }
+  body #banner h1 {
+    font: bold 35px/1 "DM Serif Display";
+  }
+  body #banner p {
+    font: 18px/1.5 "Faustina";
+  }
+  body #new_item {
+    height: 1300px;
+  }
+  body #new_item .inner {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    top: 15px;
+  }
+  body #new_item .inner h1 {
+    font: bold 40px/1px "DM Serif Display";
+    position: absolute;
+  }
+  body #new_item .inner .wrap {
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  body #new_item .inner .wrap article {
+    margin-left: 20px;
+  }
+  body #direct .inner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  body #direct .inner article {
+    width: 300px;
+  }
+  body #direct .inner article a {
+    width: 200px;
+    font-size: 15px;
+  }
+  body #greeting .inner {
+    width: 900%;
+  }
+  body #saying {
+    height: 150px;
+  }
+  body #saying .inner .swiper {
+    height: 250px;
+    margin-bottom: 0;
+  }
+  body #footer {
+    width: 100%;
+    height: 300px;
+    border-top: 1px solid #000;
+    margin-top: 190px;
+    overflow: hidden;
+  }
+  body #footer .inner {
+    width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+  }
+  body #footer .inner ul {
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+    margin-left: 150px;
+  }
+  body #footer .inner ul h1 {
+    position: relative;
+    left: -30px;
+    font: bold 20px/1px "DM Serif Display";
+    margin-bottom: 10px;
+  }
+  body #footer .inner ul a {
+    position: relative;
+    left: -25px;
+    font: 18px/30px "Faustina";
+    color: rgb(20, 1, 73);
+  }
+  body #footer .inner ul:nth-of-type(1) {
+    position: relative;
+    left: 0%;
+  }
+  body #footer .inner ul:nth-of-type(2) {
+    position: relative;
+    top: -100px;
+    left: 20%;
+  }
+  body #footer .inner ul:nth-of-type(3) {
+    position: relative;
+    top: -260px;
+    left: 40%;
+  }
+  body #footer .inner .contact {
+    width: 100%;
+    position: relative;
+    top: -230px;
+    left: 1%;
+  }
+  body #footer .inner .contact h2 {
+    font: bold 20px/1 "DM Serif Display";
+    margin-bottom: 10px;
+    text-decoration: underline;
+  }
+  body #footer .inner .contact p {
+    font: 15px/1 "Faustina";
+  }
 }
-#header .inner {
-  width: 1180px;
-  height: 120px;
-  margin: 0 auto;
-  position: relative;
-  padding-top: 30px;
+@media screen and (max-width: 700px) {
+  body #header .inner {
+    width: 100%;
+    height: 100px;
+    left: 0px;
+  }
+  body #header .inner .menuWeb {
+    display: none;
+  }
+  body #header .inner .btnCall {
+    display: block;
+  }
+  body #header .inner .menuMo {
+    display: block;
+  }
+  body #visure {
+    overflow: hidden;
+    height: 600px;
+  }
+  body #best {
+    height: 2500px;
+  }
+  body #banner {
+    display: none;
+  }
+  body #new_item {
+    position: relative;
+    top: -400px;
+    height: 2500px;
+  }
+  body #direct .inner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  body #direct .inner article {
+    width: 300px;
+  }
+  body #direct .inner article a {
+    width: 200px;
+    font-size: 15px;
+  }
+  body #direct .inner article:nth-of-type(1) {
+    position: relative;
+    top: 10px;
+  }
+  body #direct .inner article:nth-of-type(2) {
+    position: relative;
+    top: -700px;
+    width: 300px;
+    height: 300px;
+  }
+  body #direct .inner article:nth-of-type(4) {
+    position: relative;
+    top: -670px;
+  }
+  body #direct .inner article:nth-of-type(3) {
+    position: relative;
+    top: -500px;
+    width: 300px;
+    height: 300px;
+  }
+  body #greeting {
+    display: none;
+  }
+  body #saying {
+    height: 150px;
+  }
+  body #saying .inner .swiper {
+    height: 250px;
+    margin-bottom: 0;
+  }
+  body #saying .inner .swiper-button-next {
+    display: none;
+  }
+  body #saying .inner .swiper-button-prev {
+    display: none;
+  }
+  body #footer {
+    width: 100%;
+    height: 300px;
+    border-top: 1px solid #000;
+    margin-top: 190px;
+    overflow: hidden;
+  }
+  body #footer .inner {
+    width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+  }
+  body #footer .inner ul {
+    width: 100%;
+    float: left;
+    margin-top: 30px;
+    margin-left: 150px;
+  }
+  body #footer .inner ul h1 {
+    position: relative;
+    left: -30px;
+    font: bold 20px/1px "DM Serif Display";
+    margin-bottom: 10px;
+  }
+  body #footer .inner ul a {
+    position: relative;
+    left: -25px;
+    font: 18px/30px "Faustina";
+    color: rgb(20, 1, 73);
+  }
+  body #footer .inner ul:nth-of-type(1) {
+    position: relative;
+    left: -9%;
+  }
+  body #footer .inner ul:nth-of-type(2) {
+    position: relative;
+    top: -102px;
+    left: 4%;
+  }
+  body #footer .inner ul:nth-of-type(3) {
+    position: relative;
+    top: -260px;
+    left: 20%;
+  }
 }
-#header .inner a {
-  display: flex;
-  justify-content: center;
-  font: bold 60px/1 "DM Serif Display";
-  color: rgb(20, 1, 73);
-  overflow: hidden;
-}
-#header .inner .menu #gnb {
-  position: absolute;
-  left: 0%;
-  bottom: 0;
-}
-#header .inner .menu #gnb li {
-  float: left;
-}
-#header .inner .menu #gnb li a {
-  display: block;
-  padding: 0px 40px;
-  font: bold 20px/1 "Faustina";
-  color: rgb(20, 1, 73);
-  position: relative;
-  left: 120px;
-  top: 30px;
-  overflow: hidden;
-  transition: 0.5s;
-}
-#header .inner .menu #gnb li a:hover {
-  transform: scale(1.2);
-}
-#header .inner .menu .util {
-  position: absolute;
-  right: 10px;
-  top: 15px;
-}
-#header .inner .menu .util li {
-  float: left;
-}
-#header .inner .menu .util li a {
-  position: relative;
-  padding: 8px;
-  font: 15px/1 "Faustina";
-  color: rgb(20, 1, 73);
-  transition: 0.5s;
-}
-#header .inner .menu .util li a:hover {
-  transform: scale(1.2);
-}
-
 .content {
   width: 100%;
   margin: 100px 0px;
@@ -1080,110 +1354,6 @@ a {
   height: 1000px;
   margin: 0 auto;
   min-height: 500px;
-}
-
-#saying {
-  width: 100%;
-  height: 400px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  color: rgb(20, 1, 73);
-}
-#saying .inner h1 {
-  text-align: center;
-}
-#saying .inner .swiper {
-  width: 100%;
-  height: 350px;
-}
-#saying .inner .swiper .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#saying .inner .swiper .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-#footer {
-  width: 100%;
-  overflow: hidden;
-  border-top: 1px solid rgb(20, 1, 73);
-}
-#footer .inner {
-  width: 1180px;
-  height: 300px;
-  margin: 0 auto;
-}
-#footer .inner::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-#footer .inner ul {
-  float: left;
-  margin-top: 30px;
-  margin-left: 150px;
-}
-#footer .inner ul h1 {
-  font: bold 20px/1px "DM Serif Display";
-  color: rgb(20, 1, 73);
-  margin-bottom: 20px;
-}
-#footer .inner ul a {
-  font: 18px/30px "Faustina";
-  color: rgb(20, 1, 73);
-}
-#footer .inner ul:nth-of-type(1) {
-  position: relative;
-  left: 15%;
-}
-#footer .inner ul:nth-of-type(2) {
-  position: relative;
-  left: 10%;
-}
-#footer .inner ul:nth-of-type(3) {
-  display: block;
-  position: relative;
-  float: right;
-  left: 90px;
-  bottom: 10px;
-  font-size: 40px;
-}
-#footer .inner address {
-  width: 100%;
-  position: relative;
-  left: -55%;
-  top: 140px;
-  color: rgb(20, 1, 73);
-}
-#footer .inner .copy {
-  position: relative;
-  top: 190px;
-  left: -150px;
-}
-#footer .inner .contact {
-  width: 100%;
-  position: relative;
-  top: 80px;
-  left: -650px;
-}
-#footer .inner .contact h2 {
-  font: bold 30px/1 "DM Serif Display";
-  color: rgb(20, 1, 73);
-  margin-bottom: 10px;
-  text-decoration: underline;
-}
-#footer .inner .contact p {
-  font: 20px/1 "Faustina";
-  color: rgb(20, 1, 73);
 }
 
 .content {
@@ -1500,6 +1670,232 @@ main .content .inner .faq .faq-item .faq-item-body .faq-item-body-content {
   resize: none;
 }
 
+.vidList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.vidList article {
+  width: 100%;
+  height: 250px;
+  border: 1px solid rgb(20, 1, 73);
+  margin-bottom: 20px;
+}
+.vidList article .pic {
+  display: block;
+  width: 37%;
+  height: 100%;
+}
+.vidList article .pic img {
+  width: 100%;
+  height: 100%;
+}
+.vidList article .con {
+  width: 63%;
+  height: 100%;
+  padding: 40px;
+  position: relative;
+  top: -100%;
+  left: 37%;
+  background: #eee;
+}
+.vidList article .con h2 {
+  font: bold 30px/1 "DM Serif Display";
+  color: rgb(20, 1, 73);
+  margin-bottom: 20px;
+}
+.vidList article .con p {
+  font: 15px/1 "Faustina";
+  color: rgb(20, 1, 73);
+  margin-bottom: 50px;
+}
+.vidList article .con span {
+  font: 20px/1 "DM Serif Display";
+}
+.vidList article .title {
+  display: block;
+  width: 100%;
+  height: 30px;
+  font: bold 30px/1 "DM Serif Display";
+  color: rgb(20, 1, 73);
+  margin-bottom: 40px;
+}
+
+figure.pop {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  background: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  padding: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+figure.pop .btnClose {
+  position: absolute;
+  top: 30px;
+  right: 80px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.youtube h2 {
+  font: bold 50px/1 "DM Serif Display";
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#gallery #searchBox {
+  width: 100%;
+  padding: 50px;
+  font-size: 0;
+}
+#gallery #searchBox #search {
+  width: 300px;
+  height: 30px;
+  border: 1px solid #333;
+  padding-left: 10px;
+}
+#gallery #searchBox .btnSearch {
+  width: 80px;
+  height: 30px;
+  background: rgb(20, 1, 73);
+  font: bold 15px/30px "Faustina";
+  color: #fff;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  vertical-align: top;
+}
+#gallery #wrap {
+  width: 100%;
+}
+#gallery #wrap .loading {
+  width: 100px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1s;
+}
+#gallery #wrap .loading.off {
+  opacity: 0;
+}
+#gallery #wrap #list {
+  width: 100%;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s;
+}
+#gallery #wrap #list.on {
+  opacity: 1;
+  transform: translateY(0px);
+}
+#gallery #wrap #list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#gallery #wrap #list li {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+#gallery #wrap #list li div {
+  width: 100%;
+  height: 200px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+#gallery #wrap #list li div a > img {
+  width: 100%;
+  filter: grayscale(100%);
+  height: 100%;
+}
+#gallery #wrap #list li div p {
+  font: 12px/1.2 "arial";
+  color: #777;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  opacity: 0;
+  transition: 0.5s;
+}
+#gallery #wrap #list li div span {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+#gallery #wrap #list li div span > img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+#gallery #wrap #list li div span strong {
+  font: 11px/1 "arial";
+  color: orange;
+}
+#gallery #wrap #list li div:hover a > img {
+  filter: grayscale(0%);
+}
+#gallery #wrap #list li div:hover p {
+  opacity: 1;
+  position: relative;
+  top: -40%;
+  font-size: 20px;
+  color: #fff;
+}
+
+aside {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+aside .con {
+  width: 100%;
+  height: 100%;
+}
+aside .con > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+aside .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+}
+
+@media screen and (max-width: 999px) {
+  #gallery #wrap #list li {
+    width: 33.3333333333%;
+  }
+}
+@media screen and (max-width: 749px) {
+  #gallery #wrap #list li {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 439px) {
+  #gallery #wrap #list li {
+    width: 100%;
+  }
+}
 body {
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/567707/paper_fibers.png) repeat;
 }

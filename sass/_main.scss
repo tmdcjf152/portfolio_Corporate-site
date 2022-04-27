@@ -1,822 +1,776 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Faustina:wght@600&display=swap");
 // 'DM Serif Display';
 // 'Faustina';
-#header {
-	width: 100%;
-	.inner {
-		width: 1180px;
-		height: 120px;
-		margin: 0 auto;
-		position: relative;
-		padding-top: 30px;
-		a {			
-			display: flex;
-			justify-content: center;
-			font: bold 60px/1 "DM Serif Display";
-			overflow: hidden;
-		}
-		.menuWeb {
-			#gnb {
-				position: absolute;
-				left: 0%;
-				bottom: 0;
-				li {
-					float: left;
-					a {
-						display: block;
-						padding: 0px 40px;
-						font: bold 20px/1 "Faustina";
-						color: #000;
-						position: relative;
-						left: 120px;
-						top: 30px;
-						overflow: hidden;
-						transition: 0.5s;
-						&:hover {
-							transform: scale(1.2);
+body {
+	#header {
+		width: 100%;
+		.inner {
+			width: 1180px;
+			height: 120px;
+			margin: 0 auto;
+			position: relative;
+			padding-top: 30px;
+			a {
+				display: flex;
+				justify-content: center;
+				font: bold 60px/1 "DM Serif Display";
+				color: $navy;
+				overflow: hidden;
+			}
+			.menuWeb {
+				#gnb {
+					position: absolute;
+					left: 0%;
+					bottom: 0;
+					li {
+						float: left;
+						a {
+							display: block;
+							padding: 0px 40px;
+							font: bold 20px/1 "Faustina";
+							color: #000;
+							position: relative;
+							left: 120px;
+							top: 30px;
+							overflow: hidden;
+							transition: 0.5s;
+							&:hover {
+								transform: scale(1.2);
+							}
+						}
+					}
+				}
+				.util {
+					display: flex;
+					position: absolute;
+					left: 90%;
+					top: 15px;
+					li {
+						float: left;
+						a {
+							position: relative;
+							padding: 8px;
+							font: 15px/1 "apple";
+							color: #000;
+							transition: 0.5s;
+							&:hover {
+								transform: scale(1.2);
+							}
 						}
 					}
 				}
 			}
-			.util {
-				position: absolute;
-				right: 10px;
-				top: 15px;
-				li {
-					float: left;
-					a {
-						position: relative;
-						padding: 8px;
-						font: 15px/1 "apple";
-						color: #000;
-						transition: 0.5s;
-						&:hover {
-							transform: scale(1.2);
-						}
-					}
-				}
-			}
-		}
-		.menuMo {
-			width: 270px;
-			height: 100vh;
-			background: #fff;
-			padding: 35px 30px;
-			z-index: 10;
-			transition: 0.5s;
-			position: fixed;
-			top: 0;
-			left: -270px;
-			display: none;
-
-			&.on {
-				left: 0px;
-			}
-
-			h1 {
-				border-bottom: 1px solid $navy;
-				padding-bottom: 30px;
-				a {
-					display: block;
-					font: bold 24px/1 'Faustina';
-					color:$navy;
-					text-align: center;
-					
-					&:nth-of-type(2){
-						font-size: 15px;
-						float: left;
-						position: relative;
-						left: 25%;
-						margin-top: 10px;
-
-					}
-					&:nth-of-type(3){
-						font-size: 15px;
-						float: left;
-						position: relative;
-						left: 50%;
-						margin-top: 10px;
-
-					}
-				}
-				span {
-					font-size: 12px;
-					color: #aaa;
-				}
-			}
-
-			#gnbMo {
-				li {
-					a {
-						display: block;
-						width: 100%;
-						padding: 20px 0;
-						font: bold 14px/1 'Faustina';
-						color: #888;
-						text-align: center;
-						border-bottom: 1px solid #444;
-					}
-				}
-			}
-		}
-		.btnCall {
-			display: none;
-			width: 20px;
-			height: 20px;
-			position: absolute;
-			right: 30px;
-			top: 50%;
-			transform: translateY(-50%);
-
-			&::before {
-				content: "";
-				display: block;
-				width: 100%;
-				height: 2px;
-				background: #000;
-				position: absolute;
+			.menuMo {
+				width: 270px;
+				height: 100vh;
+				background: #fff;
+				padding: 35px 30px;
+				z-index: 10;
+				transition: 0.5s;
+				position: fixed;
 				top: 0;
-				left: 0;
-				transition: top 0.5s 0s, transform 0.5s 0.5s;
+				left: -270px;
+				display: none;
+
+				&.on {
+					left: 0px;
+				}
+
+				h1 {
+					border-bottom: 1px solid $navy;
+					padding-bottom: 30px;
+					a {
+						display: block;
+						font: bold 24px/1 "Faustina";
+						color: $navy;
+						text-align: center;
+
+						&:nth-of-type(2) {
+							font-size: 15px;
+							float: left;
+							position: relative;
+							left: 25%;
+							margin-top: 10px;
+						}
+						&:nth-of-type(3) {
+							font-size: 15px;
+							float: left;
+							position: relative;
+							left: 50%;
+							margin-top: 10px;
+						}
+					}
+					span {
+						font-size: 12px;
+						color: #aaa;
+					}
+				}
+
+				#gnbMo {
+					li {
+						a {
+							display: block;
+							width: 100%;
+							padding: 20px 0;
+							font: bold 14px/1 "Faustina";
+							color: #888;
+							text-align: center;
+							border-bottom: 1px solid #444;
+						}
+					}
+				}
 			}
-			&::after {
-				content: "";
-				display: block;
-				width: 100%;
-				height: 2px;
-				background: #000;
+			.btnCall {
+				display: none;
+				width: 20px;
+				height: 20px;
 				position: absolute;
-				bottom: 0;
-				left: 0;
-				transition: bottom 0.5s 0s, transform 0.5s 0.5s;
-			}
-			span {
-				display: block;
-				width: 100%;
-				height: 2px;
-				background: #000;
-				position: absolute;
+				right: 30px;
 				top: 50%;
-				margin-top: -1px;
-				left: 0;
-				text-indent: -9999px;
-				transition: all 1s;
-			}
-			&.on {
+				transform: translateY(-50%);
+
 				&::before {
-					top: 50%;
-					margin-top: -1px;
-					transform: rotate(45deg);
+					content: "";
+					display: block;
+					width: 100%;
+					height: 2px;
+					background: #000;
+					position: absolute;
+					top: 0;
+					left: 0;
+					transition: top 0.5s 0s, transform 0.5s 0.5s;
 				}
 				&::after {
-					bottom: 50%;
-					margin-bottom: -1px;
-					transform: rotate(-45deg);
+					content: "";
+					display: block;
+					width: 100%;
+					height: 2px;
+					background: #000;
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					transition: bottom 0.5s 0s, transform 0.5s 0.5s;
 				}
 				span {
-					transform: translateX(100%);
-					opacity: 0;
+					display: block;
+					width: 100%;
+					height: 2px;
+					background: #000;
+					position: absolute;
+					top: 50%;
+					margin-top: -1px;
+					left: 0;
+					text-indent: -9999px;
+					transition: all 1s;
+				}
+				&.on {
+					&::before {
+						top: 50%;
+						margin-top: -1px;
+						transform: rotate(45deg);
+					}
+					&::after {
+						bottom: 50%;
+						margin-bottom: -1px;
+						transform: rotate(-45deg);
+					}
+					span {
+						transform: translateX(100%);
+						opacity: 0;
+					}
 				}
 			}
 		}
 	}
-}
 
-#visure {
-	width: 100%;
-	height: 700px;
-	overflow: hidden;
-	position: relative;
-	top: 70px;
-	margin-bottom: 150px;
-	video {
+	#visure {
 		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
-}
-
-#best {
-	width: 100%;
-	height: 700px;
-	overflow: hidden;
-	.inner {
-		width: 1180px;
-		margin: 0 auto;
+		height: 700px;
+		overflow: hidden;
 		position: relative;
-
-		h1 {
-			font: bold 35px/1 "DM Serif Display";
-			color: $navy;
-			text-decoration: underline;
-			display: flex;
-			justify-content: center;
-			margin-bottom: 50px;
-		}
-		.wrap {
+		top: 70px;
+		margin-bottom: 150px;
+		video {
 			width: 100%;
-			article {
-				width: 280px;
-				margin-bottom: 100px;
-				margin-right: 20px;
-				float: left;
-				border: 1px solid $navy;
-				box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+			height: 100%;
+			object-fit: cover;
+		}
+	}
 
-				&:last-of-type {
-					margin-right: 0px;
-				}
-				.pic {
-					width: 100%;
-					height: 350px;
-					overflow: hidden;
-					img {
+	#best {
+		width: 100%;
+		height: 700px;
+		overflow: hidden;
+		.inner {
+			width: 1180px;
+			margin: 0 auto;
+			position: relative;
+
+			h1 {
+				font: bold 35px/1 "DM Serif Display";
+				color: $navy;
+				text-decoration: underline;
+				display: flex;
+				justify-content: center;
+				margin-bottom: 50px;
+			}
+			.wrap {
+				width: 100%;
+				article {
+					width: 280px;
+					margin-bottom: 100px;
+					margin-right: 20px;
+					float: left;
+					border: 1px solid $navy;
+					box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+
+					&:last-of-type {
+						margin-right: 0px;
+					}
+					.pic {
 						width: 100%;
-						height: 100%;
-						background-size: auto;
-						background: #000;
+						height: 350px;
+						overflow: hidden;
+						img {
+							width: 100%;
+							height: 100%;
+							background-size: auto;
+							background: #000;
+							transition: 1s;
+						}
+					}
+					&:hover .text {
+						opacity: 1;
+						color: $navy;
+					}
+					&:hover img {
+						opacity: 0.4;
+					}
+					.text {
+						height: 1px;
+						bottom: 320px;
+						padding: 10px;
+						position: relative;
+						text-align: center;
+						font: 15px/28px "Faustina";
+						opacity: 0;
 						transition: 1s;
 					}
-				}
-				&:hover .text {
-					opacity: 1;
-					color: $navy;
-				}
-				&:hover img {
-					opacity: 0.4;
-				}
-				.text {
-					height: 1px;
-					bottom: 320px;
-					padding: 10px;
-					position: relative;
-					text-align: center;
-					font: 15px/28px "Faustina";
-					opacity: 0;
-					transition: 1s;
-				}
-				.pic_text {
-					display: block;
-					p {
-						text-align: center;
-					}
-					.item_name {
-						font: bold 22px/1 "Faustina";
-						color: $navy;
-						margin-bottom: 20px;
-					}
-					.item_case {
-						font: 15px/1 "Faustina";
-						color: $navy;
-						margin-bottom: 20px;
-					}
-					a {
+					.pic_text {
 						display: block;
-						width: 200px;
-						height: 30px;
-						margin-bottom: 30px;
-						border: 1px solid #000;
-						font: 15px/28px "Faustina";
-						color: $navy;
-						text-align: center;
-						position: relative;
-						left: 13%;
-						transition: 0.5s;
-						&:hover {
-							transform: scale(1.1);
+						p {
+							text-align: center;
+						}
+						.item_name {
+							font: bold 22px/1 "Faustina";
+							color: $navy;
+							margin-bottom: 20px;
+						}
+						.item_case {
+							font: 15px/1 "Faustina";
+							color: $navy;
+							margin-bottom: 20px;
+						}
+						a {
+							display: block;
+							width: 200px;
+							height: 30px;
+							margin-bottom: 30px;
+							border: 1px solid #000;
+							font: 15px/28px "Faustina";
+							color: $navy;
+							text-align: center;
+							position: relative;
+							left: 13%;
+							transition: 0.5s;
+							&:hover {
+								transform: scale(1.1);
+							}
 						}
 					}
 				}
 			}
 		}
 	}
-}
 
-#story {
-	width: 100%;
-	height: 1200px;
-	overflow: hidden;
-	.inner {
-		width: 1180px;
-		margin: 0 auto;
-		position: relative;
-		top: 50px;
-		h1 {
-			display: flex;
-			justify-content: center;
-			font: bold 40px/1px "DM Serif Display";
-			color: $navy;
-			text-decoration: underline;
-			margin-bottom: 50px;
-		}
-		div {
-			&:nth-of-type(1) {
-				height: 450px;
-				margin-top: 30px;
-				background: #fff;
-				box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-				img {
-					width: 100%;
+	#story {
+		width: 100%;
+		height: 1200px;
+		overflow: hidden;
+		.inner {
+			width: 1180px;
+			margin: 0 auto;
+			position: relative;
+			top: 50px;
+			h1 {
+				display: flex;
+				justify-content: center;
+				font: bold 40px/1px "DM Serif Display";
+				color: $navy;
+				text-decoration: underline;
+				margin-bottom: 50px;
+			}
+			div {
+				&:nth-of-type(1) {
+					height: 450px;
+					margin-top: 30px;
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						filter: grayscale(1);
+						box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+					}
+
+					h2 {
+						text-align: center;
+						font: bold 50px/1 "DM Serif Display";
+						color: #fff;
+						position: relative;
+						top: -400px;
+						transition: 1s;
+					}
+					p {
+						padding: 0px 200px;
+						text-align: center;
+						font: bold 20px/30px "Faustina";
+						color: #fff;
+						position: relative;
+						top: -350px;
+						transition: 1s;
+					}
+					a {
+						display: block;
+						width: 200px;
+						height: 30px;
+						border: 1px solid #fff;
+						font: 20px/25px "Faustina";
+						color: #fff;
+						text-align: center;
+						position: relative;
+						left: 40%;
+						top: -60%;
+						transition: 1s;
+					}
+					img {
+						width: 100%;
+						transition: 1s;
+					}
+				}
+
+				&:nth-of-type(2) {
+					width: 49%;
 					height: 100%;
-					object-fit: cover;
+					margin-top: 20px;
+					text-align: center;
+
+					img {
+						width: 100%;
+						transition: 1s;
+						filter: grayscale(1);
+						box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+					}
+					h2 {
+						font: 35px/1 $h;
+						margin-bottom: 10px;
+					}
+					a {
+						font: 20px/1.2 $p;
+						color: $navy;
+						display: block;
+						width: 200px;
+						height: 30px;
+						position: relative;
+						left: 30%;
+						border: 1px solid #000;
+						transition: 0.5s;
+						margin-bottom: 15px;
+					}
 				}
 
-				h2 {
+				&:nth-of-type(3) {
+					width: 49%;
+					position: absolute;
+					top: 520px;
+					right: 0px;
 					text-align: center;
-					font: bold 50px/1 "DM Serif Display";
-					color: #fff;
-					position: relative;
-					top: -400px;
-					transition: 1s;
+					img {
+						width: 100%;
+						transition: 1s;
+						filter: grayscale(1);
+						box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+					}
+					h2 {
+						font: 35px/1 $h;
+						margin-bottom: 10px;
+					}
+					a {
+						font: 20px/1.2 $p;
+						color: $navy;
+						display: block;
+						width: 200px;
+						height: 30px;
+						position: relative;
+						left: 30%;
+						border: 1px solid #000;
+					}
 				}
-				p {
-					padding: 0px 200px;
-					text-align: center;
-					font: bold 20px/30px "Faustina";
-					color: #fff;
-					position: relative;
-					top: -350px;
-					transition: 1s;
-				}
-				a {
-					display: block;
-					width: 200px;
-					height: 30px;
-					border: 1px solid #fff;
-					font: 15px/28px "Faustina";
-					color: #fff;
-					text-align: center;
-					position: relative;
-					left: 40%;
-					top: -60%;
-					transition: 1s;
-				}
-				img {
-					width: 100%;
-					transition: 1s;
-				}
-				&:hover img {
-					opacity: 0.3;
-				}
-			}
-			&:hover h2 {
-				color: $navy;
-			}
-			&:hover p {
-				color: $navy;
-			}
-			&:hover a {
-				color: $navy;
-				border: 1px solid $navy;
-			}
-
-			&:nth-of-type(2) {
-				width: 50%;
-				height: 500px;
-				margin-top: 21px;
-				padding: 10px;
-				background: #fff;
-				text-align: center;
-				position: relative;
-				left: -10px;
-				h2 {
-					font: bold 35px/1 "DM Serif Display";
-					position: relative;
-					top: -75%;
-				}
-				p {
-					position: relative;
-					top: -70%;
-					left: -99%;
-					font: bold 22px/30px "Faustina";
+				&:hover h2 {
 					color: $navy;
-					padding: 0px 30px;
-					opacity: 0;
-					transition: 1s;
-				}
-				a {
-					display: block;
-					width: 200px;
-					height: 30px;
-					border: 1px solid $navy;
-					font: 15px/28px "Faustina";
-					color: $navy;
-					text-align: center;
-					position: relative;
-					left: 30%;
-					top: -60%;
-					margin-bottom: 20px;
-					transition: 1s;
-				}
-				img {
-					width: 100%;
-					transition: 1s;
-				}
-				&:hover img {
-					opacity: 0.3;
-				}
-				&:hover a {
-					transform: scale(1.1);
 				}
 				&:hover p {
-					top: -70%;
-					left: 0;
-					opacity: 1;
-				}
-			}
-
-			&:nth-of-type(3) {
-				width: 50%;
-				height: 500px;
-				padding: 10px;
-				background: #fff;
-				position: absolute;
-				top: 520px;
-				right: -10px;
-				text-align: center;
-				h2 {
-					font: bold 35px/1 "DM Serif Display";
-					position: relative;
-					top: -75%;
-				}
-				p {
-					position: relative;
-					top: -70%;
-					right: -99%;
-					font: bold 22px/1 "Faustina";
 					color: $navy;
-					padding: 0px 30px;
-					opacity: 0;
-					transition: 1s;
-				}
-				a {
-					display: block;
-					width: 200px;
-					height: 30px;
-					border: 1px solid $navy;
-					font: 15px/28px "Faustina";
-					color: #000;
-					text-align: center;
-					position: relative;
-					left: 30%;
-					top: -55%;
-					margin-bottom: 20px;
-					transition: 1s;
-				}
-				img {
-					width: 100%;
-					transition: 1s;
 				}
 				&:hover a {
-					transform: scale(1.1);
 					color: $navy;
 					border: 1px solid $navy;
+					transform: scale(1.1);
+					transition: 0.5s;
 				}
 				&:hover img {
-					opacity: 0.3;
+					filter: grayscale(0);
 				}
-			}
-			&:hover p {
-				right: 0;
-				opacity: 1;
 			}
 		}
 	}
-}
 
-#banner {
-	width: 100%;
-	height: 300px;
-	background: $navy;
-	margin-bottom: 100px;
-	margin-top: 30px;
-	padding: 20px;
-	&:hover h1 {
-		opacity: 1;
-	}
-	&:hover p {
-		opacity: 1;
-	}
-	h1 {
-		display: block;
-
-		text-align: center;
-		font: bold 50px/1 "DM Serif Display";
-		color: #fff;
-		opacity: 0;
-		transition: 1s;
-	}
-	p {
-		padding: 0px 10%;
-		text-align: center;
-		font: 20px/2 "Faustina";
-		color: #fff;
-		opacity: 0;
-		transition: 1s;
-	}
-}
-
-#new_item {
-	width: 100%;
-	height: 700px;
-	overflow: hidden;
-	.inner {
-		width: 1180px;
-		margin: 0 auto;
-		position: relative;
-
+	#banner {
+		width: 100%;
+		height: 300px;
+		background: $navy;
+		margin-bottom: 100px;
+		margin-top: 30px;
+		padding: 20px;
+		overflow: hidden;
+		&:hover h1 {
+			opacity: 1;
+		}
+		&:hover p {
+			opacity: 1;
+		}
 		h1 {
-			font: bold 35px/1 "DM Serif Display";
-			color: $navy;
-			text-decoration: underline;
-			display: flex;
-			justify-content: center;
-			margin-bottom: 50px;
-		}
-		.wrap {
-			width: 100%;
-			article {
-				width: 280px;
-				margin-bottom: 100px;
-				margin-right: 20px;
-				float: left;
-				border: 1px solid $navy;
-				box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+			display: block;
 
-				&:last-of-type {
-					margin-right: 0px;
-				}
-				.pic {
-					width: 100%;
-					height: 350px;
-					overflow: hidden;
-					img {
+			text-align: center;
+			font: bold 50px/1 "DM Serif Display";
+			color: #fff;
+			opacity: 0;
+			transition: 1s;
+		}
+		p {
+			padding: 0px 10%;
+			text-align: center;
+			font: 18px/2 "Faustina";
+			color: #fff;
+			opacity: 0;
+			transition: 1s;
+		}
+	}
+
+	#new_item {
+		width: 100%;
+		height: 700px;
+		overflow: hidden;
+		.inner {
+			width: 1180px;
+			margin: 0 auto;
+			position: relative;
+
+			h1 {
+				font: bold 35px/1 "DM Serif Display";
+				color: $navy;
+				text-decoration: underline;
+				display: flex;
+				justify-content: center;
+				margin-bottom: 50px;
+			}
+			.wrap {
+				width: 100%;
+				article {
+					width: 280px;
+					margin-bottom: 100px;
+					margin-right: 20px;
+					float: left;
+					border: 1px solid $navy;
+					box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+
+					&:last-of-type {
+						margin-right: 0px;
+					}
+					.pic {
 						width: 100%;
-						height: 100%;
-						background-size: auto;
-						transition: 1s;
+						height: 350px;
+						overflow: hidden;
+						img {
+							width: 100%;
+							height: 100%;
+							background-size: auto;
+							transition: 1s;
+						}
 					}
-				}
-				&:hover .text {
-					opacity: 1;
-					color: $navy;
-				}
-				&:hover img {
-					opacity: 0.4;
-				}
-				.text {
-					height: 1px;
-					bottom: 320px;
-					padding: 10px;
-					position: relative;
-					text-align: center;
-					font: 15px/28px "Faustina";
-					color: $navy;
-					opacity: 0;
-					transition: 1s;
-				}
-				.pic_text {
-					display: block;
-					p {
+					&:hover .text {
+						opacity: 1;
+						color: $navy;
+					}
+					&:hover img {
+						opacity: 0.4;
+					}
+					.text {
+						height: 1px;
+						bottom: 320px;
+						padding: 10px;
+						position: relative;
 						text-align: center;
-					}
-					.item_name {
-						font: bold 22px/1 "Faustina";
-						color: $navy;
-						margin-bottom: 20px;
-					}
-					.item_case {
-						font: 15px/1 "Faustina";
-						color: $navy;
-						margin-bottom: 20px;
-					}
-					a {
-						display: block;
-						width: 200px;
-						height: 30px;
-						margin-bottom: 30px;
-						border: 1px solid $navy;
 						font: 15px/28px "Faustina";
 						color: $navy;
-						text-align: center;
-						position: relative;
-						left: 13%;
-						transition: 0.5s;
-						&:hover {
-							transform: scale(1.1);
+						opacity: 0;
+						transition: 1s;
+					}
+					.pic_text {
+						display: block;
+						p {
+							text-align: center;
+						}
+						.item_name {
+							font: bold 22px/1 "Faustina";
+							color: $navy;
+							margin-bottom: 20px;
+						}
+						.item_case {
+							font: 15px/1 "Faustina";
+							color: $navy;
+							margin-bottom: 20px;
+						}
+						a {
+							display: block;
+							width: 200px;
+							height: 30px;
+							margin-bottom: 30px;
+							border: 1px solid $navy;
+							font: 15px/28px "Faustina";
+							color: $navy;
+							text-align: center;
+							position: relative;
+							left: 13%;
+							transition: 0.5s;
+							&:hover {
+								transform: scale(1.1);
+							}
 						}
 					}
 				}
 			}
 		}
 	}
-}
 
-#direct {
-	width: 100%;
-	height: 1450px;
-	overflow: hidden;
-	.inner {
-		width: 1180px;
-		height: 100%;
-		margin: 0 auto;
-		position: relative;
-		top: 50px;
-		article {
-			width: 48%;
-			height: 500px;
-			margin: 20px;
-			padding: 20px;
-			text-align: center;
-			float: left;
-		}
-		h1 {
-			font: bold 30px/1 "DM Serif Display";
-			color: $navy;
+	#direct {
+		width: 100%;
+		height: 1450px;
+		overflow: hidden;
+		.inner {
+			width: 1180px;
+			height: 100%;
+			margin: 0 auto;
 			position: relative;
-			top: 100px;
-		}
-		p {
-			font: 20px/1 "Faustina";
-			color: $navy;
-			position: relative;
-			top: 110px;
-		}
-		a {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			width: 300px;
-			height: 40px;
-			font: bold 20px/1 "Faustina";
-			color: $navy;
-			border: 1px solid $navy;
-			position: relative;
-			top: 150px;
-			left: 20%;
-		}
-		.direct_pic {
-			width: 45%;
-			height: 600px;
-			position: relative;
-
-			img {
-				width: 100%;
-				height: 100%;
-			}
-		}
-	}
-}
-
-#greeting {
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	color: $navy;
-	.inner {
-		width: 1180px;
-		height: 100%;
-		margin: 0 auto;
-		position: relative;
-		text-align: center;
-		h1 {
-			display: flex;
-			justify-content: center;
-			font: bold 70px/1 "DM Serif Display";
-		}
-		h4 {
-			font: 14px/1 "DM Serif Display";
-		}
-		p {
-			font: 20px/30px "Faustina";
-			margin-top: 20px;
-		}
-		.sign {
-			width: 400px;
-			height: 150px;
-			margin-bottom: 150px;
-		}
-	}
-}
-
-#saying {
-	width: 100%;
-	height: 200px;
-	color: $navy;
-
-	.inner {
-		h1 {
-			text-align: center;
-			font: bold 40px/1 "DM Serif Display";
-			margin-bottom: 50px;
-		}
-
-		.swiper {
-			width: 100%;
-			height: 350px;
-			.swiper-slide {
+			top: 50px;
+			article {
+				width: 48%;
+				height: 500px;
+				margin: 20px;
+				padding: 20px;
 				text-align: center;
-				font-size: 18px;
-
-				/* Center slide text vertically */
-				display: -webkit-box;
-				display: -ms-flexbox;
-				display: -webkit-flex;
-				display: flex;
-				-webkit-box-pack: center;
-				-ms-flex-pack: center;
-				-webkit-justify-content: center;
-				justify-content: center;
-				-webkit-box-align: center;
-				-ms-flex-align: center;
-				-webkit-align-items: center;
-				align-items: center;
-				img {
-					display: block;
-					width: 100%;
-					height: 100%;
-					object-fit: cover;
-				}
+				float: left;
 			}
-		}
-	}
-}
-
-#footer {
-	width: 100%;
-	overflow: hidden;
-	border-top: 1px solid #000;
-	.inner {
-		width: 1180px;
-		height: 300px;
-		margin: 0 auto;
-		&::after {
-			content: "";
-			display: block;
-			clear: both;
-		}
-		ul {
-			float: left;
-			margin-top: 30px;
-			margin-left: 150px;
 			h1 {
-				font: bold 20px/1px "DM Serif Display";
-				margin-bottom: 20px;
-			}
-			a {
-				font: 18px/30px "Faustina";
-				color: #000;
-			}
-			&:nth-of-type(1) {
-				position: relative;
-				left: 15%;
-			}
-			&:nth-of-type(2) {
-				position: relative;
-				left: 10%;
-			}
-			&:nth-of-type(3) {
-				display: block;
-				position: relative;
-				float: right;
-				left: 90px;
-				bottom: 10px;
-				font-size: 40px;
-			}
-		}
-		address {
-			width: 100%;
-			position: relative;
-			left: -55%;
-			top: 140px;
-		}
-		.copy {
-			position: relative;
-			top: 190px;
-			left: -150px;
-		}
-		.contact {
-			width: 100%;
-			position: relative;
-			top: 80px;
-			left: -650px;
-			h2 {
 				font: bold 30px/1 "DM Serif Display";
-				margin-bottom: 10px;
-				text-decoration: underline;
+				color: $navy;
+				position: relative;
+				top: 100px;
 			}
 			p {
 				font: 20px/1 "Faustina";
+				color: $navy;
+				position: relative;
+				top: 110px;
+			}
+			a {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-wrap: wrap;
+				width: 300px;
+				height: 40px;
+				font: bold 20px/1 "Faustina";
+				color: $navy;
+				border: 1px solid $navy;
+				position: relative;
+				top: 150px;
+				left: 20%;
+			}
+			.direct_pic {
+				width: 45%;
+				height: 600px;
+				position: relative;
+
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+
+	#greeting {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		color: $navy;
+		.inner {
+			width: 1180px;
+			height: 100%;
+			margin: 0 auto;
+			position: relative;
+			text-align: center;
+			h1 {
+				display: flex;
+				justify-content: center;
+				font: bold 70px/1 "DM Serif Display";
+			}
+			h4 {
+				font: 14px/1 "DM Serif Display";
+			}
+			p {
+				font: 20px/30px "Faustina";
+				margin-top: 20px;
+			}
+			.sign {
+				width: 400px;
+				height: 150px;
+				margin-bottom: 150px;
+			}
+		}
+	}
+
+	#saying {
+		width: 100%;
+		height: 200px;
+		color: $navy;
+
+		.inner {
+			h1 {
+				text-align: center;
+				font: bold 40px/1 "DM Serif Display";
+				margin-bottom: 50px;
+			}
+
+			.swiper {
+				width: 100%;
+				height: 300px;
+
+				.swiper-slide {
+					text-align: center;
+					font-size: 18px;
+
+					/* Center slide text vertically */
+					display: -webkit-box;
+					display: -ms-flexbox;
+					display: -webkit-flex;
+					display: flex;
+					-webkit-box-pack: center;
+					-ms-flex-pack: center;
+					-webkit-justify-content: center;
+					justify-content: center;
+					-webkit-box-align: center;
+					-ms-flex-align: center;
+					-webkit-align-items: center;
+					align-items: center;
+					img {
+						display: block;
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+			}
+		}
+	}
+
+	#footer {
+		width: 100%;
+		height: 300px;
+		border-top: 1px solid #000;
+		margin-top: 190px;
+		overflow: hidden;
+		.inner {
+			width: 1180px;
+			height: 100%;
+			margin: 0 auto;
+			ul {
+				width: 100%;
+				float: left;
+				margin-top: 30px;
+				margin-left: 150px;
+				h1 {
+					position: relative;
+					left: -30px;
+					font: bold 20px/1px "DM Serif Display";
+					margin-bottom: 10px;
+				}
+				a {
+					position: relative;
+					left: -25px;
+					font: 18px/30px "Faustina";
+					color: $navy;
+				}
+				&:nth-of-type(1) {
+					position: relative;
+					left: 0%;
+				}
+				&:nth-of-type(2) {
+					position: relative;
+					top: -100px;
+					left: 20%;
+				}
+				&:nth-of-type(3) {
+					position: relative;
+					top: -260px;
+					left: 40%;
+				}
+			}
+
+			.contact {
+				width: 100%;
+				position: relative;
+				top: -370px;
+				left: 70%;
+				h2 {
+					font: bold 30px/1 "DM Serif Display";
+					margin-bottom: 10px;
+					text-decoration: underline;
+				}
+				p {
+					font: 20px/1 "Faustina";
+				}
+				address {
+					font: 15px/1 "Faustina";
+				}
+				.copy {
+					font: 13px/1 $p;
+				}
 			}
 		}
 	}
 }
 
-// 테블릿구역ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
-// 테블릿구역ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
-// 테블릿구역ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
-// 테블릿구역ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 
+
+
+
+
+// 랩탑구역ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+// 랩탑구역ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+// 랩탑구역ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+// 랩탑구역ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 @media screen and (max-width: 1179px) {
 	body {
 		#header {
@@ -857,7 +811,10 @@
 				.wrap {
 					width: 100%;
 					margin-top: 80px;
-					margin-left: 22%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-wrap: wrap;
 					article {
 						margin-left: 20px;
 					}
@@ -869,73 +826,90 @@
 			.inner {
 				width: 100%;
 				div {
-					&:nth-of-type(2) {
+					width: 100%;
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					align-items: center;
+					h2 {
+						display: block;
+						width: 100%;
+					}
+					&:nth-of-type(1) {
 						width: 50%;
-						height: 400px;
+						height: 100%;
 						margin-top: 30px;
 						padding: 0px;
-						background: #fff;
 						text-align: center;
 						position: relative;
-						right: 50%;
+						right: -5%;
+						float: left;
+
 						h2 {
-							top: -80%;
-						}
-						p {
-							top: -70%;
-							font: bold 18px/20px "Faustina";
+							top: 14px;
+							font-size: 40px;
+							color: #000;
 						}
 						a {
-							top: -60%;
+							top: 45px;
+							left: 0px;
+							color: #000;
+							border: 1px solid #000;
+						}
+					}
+					&:nth-of-type(2) {
+						width: 37%;
+						height: 100%;
+						margin-top: 30px;
+						padding: 0px;
+						text-align: center;
+						position: relative;
+						top: 30px;
+						right: -8%;
+						margin-right: 20px;
+						h2 {
+							font-size: 25px;
+						}
+						a {
+							position: relative;
+							left: 0;
+							margin-bottom: 20px;
 						}
 					}
 
 					&:nth-of-type(3) {
-						width: 50%;
-						height: 400px;
-						top: 530px;
-						left: 50%;
-						padding: 0;
+						width: 37%;
+						height: 100%;
+						margin-top: 30px;
+						padding: 0px;
+						text-align: center;
+						position: relative;
+						top: 50%;
+						right: -8%;
 						h2 {
-							top: -80%;
-						}
-						p {
-							top: -70%;
-							right: -99%;
-							font: bold 18px/1 "Faustina";
-							color: $navy;
-							padding: 0px 30px;
-							opacity: 0;
-							transition: 1s;
+							font-size: 25px;
 						}
 						a {
-							right: 60%;
-							top: -60%;
-							margin-bottom: 20px;
-							transition: 1s;
-						}
-						img {
-							width: 100%;
-							transition: 1s;
-						}
-						&:hover a {
-							transform: scale(1.1);
-							color: $navy;
-							border: 1px solid $navy;
-						}
-						&:hover img {
-							opacity: 0.3;
+							position: relative;
+							left: 0px;
 						}
 					}
-					&:hover p {
-						right: 0;
-						opacity: 1;
+					&:hover a {
+						transform: scale(1.1);
+						color: $navy;
+						border: 1px solid $navy;
 					}
+				}
+				&:hover p {
+					right: 0;
+					opacity: 1;
 				}
 			}
 		}
 
 		#banner {
+			width: 100%;
+			height: 100%;
 			h1 {
 				font: bold 35px/1 "DM Serif Display";
 			}
@@ -960,7 +934,10 @@
 				.wrap {
 					width: 100%;
 					margin-top: 80px;
-					margin-left: 22%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-wrap: wrap;
 					article {
 						margin-left: 20px;
 					}
@@ -971,15 +948,14 @@
 		#direct {
 			.inner {
 				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-wrap: wrap;
 				article {
 					width: 45%;
-					h1 {
-						position: relative;
-						left: 20px;
-					}
-					p {
-						position: relative;
-						left: 20px;
+					a {
+						left: 15%;
 					}
 				}
 			}
@@ -987,12 +963,12 @@
 
 		#greeting {
 			.inner {
-				width: 900px;
+				width: 900%;
 			}
 		}
 
 		#saying {
-			height: 290px;
+			height: 150px;
 			.inner {
 				.swiper {
 					height: 250px;
@@ -1002,61 +978,481 @@
 		}
 
 		#footer {
+			width: 100%;
+			height: 300px;
+			border-top: 1px solid #000;
+			margin-top: 190px;
+			overflow: hidden;
 			.inner {
-				width: 70%;
-				height: 300px;
+				width: 1180px;
+				height: 100%;
+				margin: 0 auto;
 				ul {
+					width: 100%;
 					float: left;
 					margin-top: 30px;
-					margin-left: 70px;
+					margin-left: 150px;
 					h1 {
+						position: relative;
+						left: -30px;
 						font: bold 20px/1px "DM Serif Display";
 						margin-bottom: 10px;
 					}
 					a {
-						font: 15px/30px "Faustina";
-						color: #000;
+						position: relative;
+						left: -25px;
+						font: 18px/30px "Faustina";
+						color: $navy;
 					}
 					&:nth-of-type(1) {
 						position: relative;
-						left: 15%;
+						left: 0%;
 					}
 					&:nth-of-type(2) {
 						position: relative;
-						left: 15%;
+						top: -100px;
+						left: 20%;
 					}
 					&:nth-of-type(3) {
-						display: block;
 						position: relative;
-						float: right;
-						left: 20%;
-						bottom: 10px;
-						font-size: 40px;
+						top: -260px;
+						left: 40%;
 					}
-				}
-				address {
-					width: 100%;
-					position: relative;
-					left: -70%;
-					top: 40%;
-				}
-				.copy {
-					position: relative;
-					top: 190px;
-					left: -150px;
 				}
 				.contact {
 					width: 100%;
 					position: relative;
-					top: 30%;
-					left: -70%;
+					top: -230px;
+					left: 1%;
 					h2 {
-						font: bold 30px/1 "DM Serif Display";
+						font: bold 20px/1 "DM Serif Display";
 						margin-bottom: 10px;
 						text-decoration: underline;
 					}
 					p {
-						font: 20px/1 "Faustina";
+						font: 15px/1 "Faustina";
+					}
+				}
+			}
+		}
+	}
+}
+
+// 테블릿구역ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+// 테블릿구역ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+// 테블릿구역ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+// 테블릿구역ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+@media screen and (max-width: 820px) {
+	body {
+		#header {
+			.inner {
+				width: 100%;
+				height: 100px;
+				left: 0px;
+				.menuWeb {
+					display: none;
+				}
+				.btnCall {
+					display: block;
+				}
+				.menuMo {
+					display: block;
+				}
+			}
+		}
+
+		#visure {
+			overflow: hidden;
+			height: 600px;
+		}
+
+		#best {
+			height: 1300px;
+			.inner {
+				width: 100%;
+				margin: 0 auto;
+				display: flex;
+				justify-content: center;
+				align-items: flex-start;
+				top: 15px;
+				h1 {
+					font: bold 40px/1px "DM Serif Display";
+					position: absolute;
+				}
+				.wrap {
+					width: 100%;
+					margin-top: 80px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-wrap: wrap;
+					article {
+						margin-left: 20px;
+					}
+				}
+			}
+		}
+
+		#story {
+			.inner {
+				width: 100%;
+				div {
+					width: 100%;
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					align-items: center;
+					h2 {
+						display: block;
+						width: 100%;
+					}
+					&:nth-of-type(1) {
+						width: 50%;
+						height: 100%;
+						margin-top: 30px;
+						padding: 0px;
+						text-align: center;
+						position: relative;
+						right: -5%;
+						float: left;
+
+						h2 {
+							top: 14px;
+							font-size: 40px;
+							color: #000;
+						}
+						a {
+							top: 45px;
+							left: 0px;
+							color: #000;
+							border: 1px solid #000;
+						}
+					}
+					&:nth-of-type(2) {
+						width: 37%;
+						height: 100%;
+						margin-top: 30px;
+						padding: 0px;
+						text-align: center;
+						position: relative;
+						top: 30px;
+						right: -8%;
+						margin-right: 20px;
+						h2 {
+							font-size: 25px;
+						}
+						a {
+							position: relative;
+							left: 0;
+							margin-bottom: 20px;
+						}
+					}
+
+					&:nth-of-type(3) {
+						width: 37%;
+						height: 100%;
+						margin-top: 30px;
+						padding: 0px;
+						text-align: center;
+						position: relative;
+						top: 50%;
+						right: -8%;
+						h2 {
+							font-size: 25px;
+						}
+						a {
+							position: relative;
+							left: 0px;
+						}
+					}
+					&:hover a {
+						transform: scale(1.1);
+						color: $navy;
+						border: 1px solid $navy;
+					}
+				}
+				&:hover p {
+					right: 0;
+					opacity: 1;
+				}
+			}
+		}
+
+		#banner {
+			width: 100%;
+			height: 100%;
+			h1 {
+				font: bold 35px/1 "DM Serif Display";
+			}
+			p {
+				font: 18px/1.5 "Faustina";
+			}
+		}
+
+		#new_item {
+			height: 1300px;
+			.inner {
+				width: 100%;
+				margin: 0 auto;
+				display: flex;
+				justify-content: center;
+				align-items: flex-start;
+				top: 15px;
+				h1 {
+					font: bold 40px/1px "DM Serif Display";
+					position: absolute;
+				}
+				.wrap {
+					width: 100%;
+					margin-top: 80px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-wrap: wrap;
+					article {
+						margin-left: 20px;
+					}
+				}
+			}
+		}
+
+		#direct {
+			.inner {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-wrap: wrap;
+				article {
+					width: 300px;
+					a{
+						width: 200px;
+						font-size: 15px;
+					}
+					}
+				}
+			}
+
+		#greeting {
+			.inner {
+				width: 900%;
+			}
+		}
+
+		#saying {
+			height: 150px;
+			.inner {
+				.swiper {
+					height: 250px;
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		#footer {
+			width: 100%;
+			height: 300px;
+			border-top: 1px solid #000;
+			margin-top: 190px;
+			overflow: hidden;
+			.inner {
+				width: 1180px;
+				height: 100%;
+				margin: 0 auto;
+				ul {
+					width: 100%;
+					float: left;
+					margin-top: 30px;
+					margin-left: 150px;
+					h1 {
+						position: relative;
+						left: -30px;
+						font: bold 20px/1px "DM Serif Display";
+						margin-bottom: 10px;
+					}
+					a {
+						position: relative;
+						left: -25px;
+						font: 18px/30px "Faustina";
+						color: $navy;
+					}
+					&:nth-of-type(1) {
+						position: relative;
+						left: 0%;
+					}
+					&:nth-of-type(2) {
+						position: relative;
+						top: -100px;
+						left: 20%;
+					}
+					&:nth-of-type(3) {
+						position: relative;
+						top: -260px;
+						left: 40%;
+					}
+				}
+				.contact {
+					width: 100%;
+					position: relative;
+					top: -230px;
+					left: 1%;
+					h2 {
+						font: bold 20px/1 "DM Serif Display";
+						margin-bottom: 10px;
+						text-decoration: underline;
+					}
+					p {
+						font: 15px/1 "Faustina";
+					}
+				}
+			}
+		}
+	}
+}
+
+
+// 모바일구역 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+// 모바일구역 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+// 모바일구역 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+// 모바일구역 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+@media screen and (max-width: 700px) {
+	body {
+		#header {
+			.inner {
+				width: 100%;
+				height: 100px;
+				left: 0px;
+				.menuWeb {
+					display: none;
+				}
+				.btnCall {
+					display: block;
+				}
+				.menuMo {
+					display: block;
+				}
+			}
+		}
+
+		#visure {
+			overflow: hidden;
+			height: 600px;
+		}
+
+		#best {
+			height: 2500px;
+		}
+
+
+		#banner {
+	display: none;
+		}
+
+		#new_item {
+			position: relative;
+			top: -400px;
+			height: 2500px;
+		}
+
+		#direct {
+			.inner {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-wrap: wrap;
+				article {
+					width: 300px;
+					a{
+						width: 200px;
+						font-size: 15px;
+					}
+					&:nth-of-type(1){
+						position: relative;
+						top:10px;
+					}
+					&:nth-of-type(2){
+						position: relative;
+						top:-700px;
+						width: 300px;
+						height: 300px;
+					}
+					&:nth-of-type(4){
+						position: relative;
+						top:-670px;
+					}
+					&:nth-of-type(3){
+						position: relative;
+						top:-500px;
+						width: 300px;
+						height: 300px;
+					}
+					}
+				}
+			}
+
+		#greeting {
+			display: none;
+			}
+		
+
+		#saying {
+			height: 150px;
+			.inner {
+				.swiper {
+					height: 250px;
+					margin-bottom: 0;
+				}
+				.swiper-button-next{
+					display: none;
+				}
+				.swiper-button-prev{
+					display: none;
+				}
+			}
+		}
+
+		#footer {
+			width: 100%;
+			height: 300px;
+			border-top: 1px solid #000;
+			margin-top: 190px;
+			overflow: hidden;
+			.inner {
+				width: 1180px;
+				height: 100%;
+				margin: 0 auto;
+				ul {
+					width: 100%;
+					float: left;
+					margin-top: 30px;
+					margin-left: 150px;
+					h1 {
+						position: relative;
+						left: -30px;
+						font: bold 20px/1px "DM Serif Display";
+						margin-bottom: 10px;
+					}
+					a {
+						position: relative;
+						left: -25px;
+						font: 18px/30px "Faustina";
+						color: $navy;
+					}
+					&:nth-of-type(1) {
+						position: relative;
+						left: -9%;
+					}
+					&:nth-of-type(2) {
+						position: relative;
+						top: -102px;
+						left: 4%;
+					}
+					&:nth-of-type(3) {
+						position: relative;
+						top: -260px;
+						left: 20%;
 					}
 				}
 			}
