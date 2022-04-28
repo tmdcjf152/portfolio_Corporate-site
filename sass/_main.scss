@@ -2,6 +2,7 @@
 // 'DM Serif Display';
 // 'Faustina';
 body {
+
 	#header {
 		width: 100%;
 		.inner {
@@ -653,16 +654,16 @@ body {
 
 	#saying {
 		width: 100%;
-		height: 200px;
 		color: $navy;
-
+		position: relative;
+		top: 190px;
 		.inner {
+			width: 100%;
 			h1 {
 				text-align: center;
 				font: bold 40px/1 "DM Serif Display";
 				margin-bottom: 50px;
 			}
-
 			.swiper {
 				width: 100%;
 				height: 300px;
@@ -963,19 +964,11 @@ body {
 
 		#greeting {
 			.inner {
-				width: 900%;
+				width: 90%;
 			}
 		}
 
-		#saying {
-			height: 150px;
-			.inner {
-				.swiper {
-					height: 250px;
-					margin-bottom: 0;
-				}
-			}
-		}
+
 
 		#footer {
 			width: 100%;
@@ -1191,7 +1184,7 @@ body {
 		}
 
 		#new_item {
-			height: 1300px;
+			height: 100%;
 			.inner {
 				width: 100%;
 				margin: 0 auto;
@@ -1236,19 +1229,10 @@ body {
 
 		#greeting {
 			.inner {
-				width: 900%;
+				width: 90%;
 			}
 		}
 
-		#saying {
-			height: 150px;
-			.inner {
-				.swiper {
-					height: 250px;
-					margin-bottom: 0;
-				}
-			}
-		}
 
 		#footer {
 			width: 100%;
@@ -1310,7 +1294,6 @@ body {
 		}
 	}
 }
-
 
 // 모바일구역 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 // 모바일구역 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
@@ -1397,21 +1380,7 @@ body {
 			}
 		
 
-		#saying {
-			height: 150px;
-			.inner {
-				.swiper {
-					height: 250px;
-					margin-bottom: 0;
-				}
-				.swiper-button-next{
-					display: none;
-				}
-				.swiper-button-prev{
-					display: none;
-				}
-			}
-		}
+
 
 		#footer {
 			width: 100%;
@@ -1456,6 +1425,130 @@ body {
 					}
 				}
 			}
+		}
+	}
+}
+
+// 모바일구역 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+// 모바일구역 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+// 모바일구역 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+// 모바일구역 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+@media screen and (max-width: 425px) {
+	body {
+		#header{
+			a{
+				font-size: 20px;
+			}
+		}
+		#visure {
+			overflow: hidden;
+			height: 600px;
+		}
+
+		#best {
+			height: 2500px;
+		}
+
+
+		#banner {
+	display: none;
+		}
+
+		#new_item {
+			position: relative;
+			top: -400px;
+			height: 2500px;
+		}
+
+		#direct {
+			.inner {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-wrap: wrap;
+				article {
+					width: 300px;
+					a{
+						width: 200px;
+						font-size: 15px;
+					}
+					&:nth-of-type(1){
+						position: relative;
+						top:10px;
+					}
+					&:nth-of-type(2){
+						position: relative;
+						top:-700px;
+						width: 300px;
+						height: 300px;
+					}
+					&:nth-of-type(4){
+						position: relative;
+						top:-670px;
+					}
+					&:nth-of-type(3){
+						position: relative;
+						top:-500px;
+						width: 300px;
+						height: 300px;
+					}
+					}
+				}
+			}
+
+		#greeting {
+			display: none;
+			}
+		
+
+		#footer {
+			width: 100%;
+			.inner {
+				ul {
+					width: 100%;
+					float: left;
+					margin-top: 30px;
+					margin-left: 150px;
+					h1 {
+						position: relative;
+						left: -25px;
+						font: bold 14px/1px "DM Serif Display";
+						color: $navy;
+						margin-bottom: 10px;
+					}
+					a {font: 14px/30px "Faustina";
+					}
+					&:nth-of-type(1) {
+						left: -9%;
+					}
+					&:nth-of-type(2) {
+						left: -2%;
+					}
+					&:nth-of-type(3) {
+						top: -235px;
+						left: 6%;
+					}
+
+				}	.contact {
+					top: -210px;
+				h2 {
+					font: bold 15px/1 "DM Serif Display";
+					margin-bottom: 10px;
+					text-decoration: underline;
+				}
+				p {
+					font: 10px/1 "Faustina";
+				}
+				address {
+					font: 10px/1 "Faustina";
+				}
+				.copy {
+					font: 10px/1 $p;
+				}
+			}
+			}
+		
 		}
 	}
 }

@@ -10,76 +10,153 @@
 			text-align: center;
 			margin-bottom: 50px;
 		}
-        img{
-            width: 90%;
-            margin-bottom: 50px;
-            position: relative;
-            left: 5%;
-
-        }
-		table {
-			th,
-			td {
-
-				padding: 20px 25px;
-			}
-			th {
-				width: 20%;
-                font: 20px/1 $p;
-				input[type="reset"],
-				input[type="submit"] {
-                    position: relative;
-                    left: 5%;
-					width: 25%;
-					height: 40px;
-					border: 1px solid $navy;
-                    background: #fff;
-					margin: 20px;
-					font: bold 20px/1 $p;
-					color: $navy;
-					cursor: pointer;
-					transition: 0.5s;
-                    &:hover{
-                        background: $navy;
-                        color: #fff;
-                    }
+		img {
+			width: 100%;
+			margin-bottom: 50px;
+			display: flex;
+			justify-content: center;
+		}
+		.table {
+			width: 100%;
+			table {
+				width: 100%;
+				th,
+				td {
+					width: 100%;
+					padding: 20px 25px;
 				}
-			}td{
-                input[type=text],input[type=password],input[type=email]{
-                    width: 35%;
-                    height: 30px;
-                    background:#fff;
-                    padding: 10px;
-                    border: 1px solid $navy;
-                    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
-                }
-                input[type=tel]{
-                    width: 19.5%;
-                    height: 30px;
-                    background:#fff;
-                    padding: 10px;
-                    border: 1px solid $navy;
-                    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
-                }
-               select{
-                    width: 15%;
-                    height: 30px;
-                    background:#fff;
-                    padding: 0px;
-                    border: 1px solid $navy;
-                    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
-                }
-                #text{
-                    width: 800px;
-                    height: 400px;
-                    position: relative;
-                    left: -5%;
-                    text-align: left;
-                    padding: 0 auto;
-                    resize: none;
-                }
+				th {
+					width: 20%;
+					font: 20px/1 $p;
+					input[type="reset"],
+					input[type="submit"] {
+						position: relative;
+						left: 5%;
+						width: 25%;
+						height: 40px;
+						border: 1px solid $navy;
+						background: rgb(255, 255, 255);
+						margin: 20px;
+						font: bold 20px/1 $p;
+						color: $navy;
+						cursor: pointer;
+						transition: 0.5s;
+						&:hover {
+							background: $navy;
+							color: #fff;
+						}
+					}
+				}
+				td {
+					input[type="text"],
+					input[type="password"],
+					input[type="email"] {
+						width: 35%;
+						height: 30px;
+						background: rgba(255, 255, 255, 0.164);
+						padding: 10px;
+						border: 1px solid $navy;
+						box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+					}
+					input[type="tel"] {
+						width: 19.5%;
+						height: 30px;
+						background: #fff;
+						padding: 10px;
+						border: 1px solid $navy;
+						box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+					}
+					select {
+						width: 15%;
+						height: 30px;
+						background: #fff;
+						padding: 0px;
+						border: 1px solid $navy;
+						box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+					}
+				}
+			}
+		}
+	}
+}
 
-            }
+@media screen and (max-width: 999px) {
+	.join {
+		.inner {
+			width: 100%;
+			img {
+				width: 100%;
+				margin-left: 0%;
+			}
+			h1 {
+				width: 100%;
+			}
+			table {
+				th,
+				td {
+					padding: 20px 25px;
+				}
+				th {
+					width: 20%;
+					font: 20px/1 $p;
+					input[type="reset"],
+					input[type="submit"] {
+						position: relative;
+						left: 5%;
+						width: 25%;
+						height: 40px;
+						border: 1px solid $navy;
+						background: rgb(255, 255, 255);
+						margin: 20px;
+						font: bold 20px/1 $p;
+						color: $navy;
+						cursor: pointer;
+						transition: 0.5s;
+						&:hover {
+							background: $navy;
+							color: #fff;
+						}
+					}
+				}
+				td {
+					input[type="text"],
+					input[type="password"],
+					input[type="email"] {
+						width: 35%;
+						height: 30px;
+						background: rgba(255, 255, 255, 0.164);
+						padding: 10px;
+						border: 1px solid $navy;
+						box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+					}
+					input[type="tel"] {
+						width: 19.5%;
+						height: 30px;
+						background: #fff;
+						padding: 10px;
+						border: 1px solid $navy;
+						box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+					}
+					select {
+						width: 15%;
+						height: 30px;
+						background: #fff;
+						padding: 0px;
+						border: 1px solid $navy;
+						box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+						position: relative;
+					}
+					#text {
+						width: 800px;
+						height: 400px;
+						position: relative;
+						left: -10%;
+						text-align: left;
+						padding: 0 auto;
+						resize: none;
+					}
+				}
+			}
 		}
 	}
 }

@@ -1,0 +1,74 @@
+.location{
+    width: 100%;
+.inner{
+    height: 300px;
+    h1{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font:  bold 50px/1 $h;
+    }
+}
+    #map{
+        width: 100%; height: 500px; border: 1px solid #000;
+        margin-bottom: 20px;
+    }
+    &::after{content: ''; display: block; clear: both;}
+
+    .traffic{
+        float: left;
+        li{
+            float: left; margin-right: 20px;
+            a{
+                display: block;
+                width: 200px; height: 40px; background: #fff;
+                font: bold 12px/40px '맑은 고딕';
+                color: $navy; text-align: center;
+                border: 1px solid #555;
+            }
+            &.on a{
+                background: $navy; color: #fff;
+            }
+        }
+    }
+    .branch{
+        float: right;
+        li{
+            float: left; margin-left: 10px;
+            a{
+                display: block;
+                width: 200px; height: 40px;
+                background: #fff;
+                font: bold 12px/40px '맑은 고딕';
+                color: $navy; text-align: center;
+                border: 1px solid $navy;
+            }
+            &.on a{
+                background: $navy; color: #fff;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .location{
+        #map{height: 350px;}
+        .traffic{
+           width: 100%;
+            li{
+                margin-right: 1%; width: calc(97% / 3);
+                a{
+                    width: 100%;
+                }
+            }
+        }
+        .branch{
+            margin-top: 20px; width: 100%;
+            li{
+               margin-left:0px; margin-right: 1%; width: calc(97% / 3);
+                a{
+                   width: 100%;
+                }
+            }
+        }
+    }
+}

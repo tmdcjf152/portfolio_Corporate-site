@@ -8,10 +8,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="js/main.js"></script>
-    <script src="js/anime.js"></script>
+    <script defer src="js/location.js"></script>
+    <script defer src="js/anime.js"></script>
     <script src="https://kit.fontawesome.com/8cb4d71d7e.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	46b0c4b7ae36bd87c6175c8ef0890e9a"></script>
 
 
 
@@ -61,8 +62,24 @@
         </div>
     </header>
 
-    <section class="content">
+    <section class="content location">
+        <div class="sub_visual"></div>
         <div class="inner">
+            <h1>LOCATION</h1>
+            <div id="map"></div>
+
+            <ul class="traffic">
+                <li><a href="#">Traffic conditions ON</a></li>
+                <li class="on"><a href="#">Traffic conditions OFF</a></li>
+            </ul>
+
+            <ul class="branch">
+                <li class="on" data-index="0"><a href="#">the head shop</a></li>
+                <li data-index="1"><a href="#">Galleria Department Store</a></li>
+                <li data-index="2"><a href="#">Lotte World Tower</a></li>
+            </ul>
+
+
         </div>
     </section>
 

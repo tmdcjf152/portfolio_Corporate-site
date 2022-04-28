@@ -4,7 +4,7 @@
 	width: 100%;
 	overflow: hidden;
 	color: $navy;
-	font-family: 'Faustina';
+	font-family: "Faustina";
 	.inner {
 		width: 1180px;
 		height: 100%;
@@ -14,19 +14,19 @@
 			margin-bottom: 200px;
 			margin-top: 200px;
 		}
-		.byred_text{
+		.byred_text {
 			height: 400px;
-			font: 25px/2 'Faustina';
+			font: 25px/2 "Faustina";
 			margin-bottom: 200px;
 			color: #fff;
 			background: $navy;
 			border-radius: 50%;
-			span{
+			span {
 				font: 50px/1 "DM Serif Display";
 				position: relative;
 				top: 0px;
 			}
-			p{
+			p {
 				position: relative;
 				top: 30px;
 				padding: 40px;
@@ -35,15 +35,14 @@
 		.wrap {
 			width: 100%;
 			height: 2800px;
-			.team_title{
-				font: bold 30px/1 'DM Serif Display';
+			.team_title {
+				font: bold 30px/1 "DM Serif Display";
 				margin-bottom: 50px;
 			}
 			.ceo {
 				display: flex;
 				justify-content: center;
 				margin-bottom: 15%;
-				
 			}
 			.Planning {
 				height: 400px;
@@ -104,17 +103,324 @@
 					height: 100%;
 				}
 			}
-		}.team_title{
-			width: 270px;
+		}
+		.team_title {
+			width: 100%;
 			height: 50px;
-			position: relative;
-			left: 40%;
-			transform: translateY(-50%, -50%);
-			&:nth-of-type(1){
-				left: 38.5%;
-			}
-			
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
 		}
 	}
 }
 
+// 랩탑구역ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+// 랩탑구역ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+// 랩탑구역ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+// 랩탑구역ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+@media screen and (max-width: 1179px) {
+	.content {
+		.inner {
+			width: 90%;
+			height: 4400px;
+			h1 {
+				font: bold 80px/1 "DM Serif Display";
+				margin-bottom: 100px;
+				margin-top: 100px;
+				display: flex;
+				justify-content: center;
+			}
+			.byred_text {
+				height: 350px;
+				font: 20px/2 "Faustina";
+				margin-bottom: 100px;
+				span {
+					font: 40px/1 "DM Serif Display";
+				}
+			}
+			.wrap {
+				width: 100%;
+				height: 100%;
+				.ceo {
+					margin-bottom: 20%;
+				}
+				.Planning {
+					height: 700px;
+					display: flex;
+					justify-content: center;
+					flex-wrap: wrap;
+					margin-left: 0%;
+					margin-bottom: 0;
+					article {
+						margin-bottom: 20%;
+						.pic {
+							width: 100%;
+							height: 100%;
+						}
+						margin-left: 40px;
+						.member_text {
+							left: -40px;
+						}
+					}
+				}
+				.Design {
+					height: 25%;
+					display: flex;
+					justify-content: center;
+					flex-wrap: wrap;
+					margin-bottom: 15%;
+					margin: 0;
+					article {
+						margin-bottom: 0%;
+						.pic {
+							width: 100%;
+							height: 100%;
+						}
+						margin-left: 40px;
+						.member_text {
+							position: relative;
+						}
+					}
+				}
+				.marketing {
+					height: 25%;
+					display: flex;
+					justify-content: center;
+					flex-wrap: wrap;
+					margin-bottom: 15%;
+					article {
+						margin-bottom: 0%;
+						.pic {
+							width: 100%;
+							height: 100%;
+						}
+						margin-left: 40px;
+						.member_text {
+							position: relative;
+						}
+					}
+				}
+				article {
+					width: 280px;
+					height: 400px;
+
+					img {
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+			.team_title {
+				width: 100%;
+				height: 50px;
+				left: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-wrap: wrap;
+			}
+		}
+	}
+}
+
+// 모바일구역 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+// 모바일구역 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+// 모바일구역 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+// 모바일구역 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+@media screen and (max-width: 700px) {
+	.content {
+		.inner {
+			height: 4000px;
+			.byred_text {
+				font: 15px/2 "Faustina";
+				span {
+					font: 30px/1 "DM Serif Display";
+				}
+			}
+			.wrap {
+				.ceo {
+					margin-bottom: 20%;
+				}
+				.Planning {
+					height: 200px;
+					margin-bottom: 50%;
+					article {
+						margin-bottom: 20%;
+						.pic {
+							width: 100%;
+							height: 100%;
+						}
+						margin-left: 10px;
+						&:nth-of-type(1) {
+							margin-left: 0;
+						}
+						.member_text {
+							left: -10px;
+						}
+					}
+				}
+				.Design {
+					height: 25%;
+					display: flex;
+					justify-content: center;
+					flex-wrap: wrap;
+					margin-bottom: 15%;
+					margin: 0;
+					article {
+						margin-bottom: 20%;
+						.pic {
+							width: 100%;
+							height: 100%;
+						}
+						margin-left: 10px;
+						.member_text {
+							left: -10px;
+						}
+					}
+				}
+				.marketing {
+					height: 25%;
+					display: flex;
+					justify-content: center;
+					flex-wrap: wrap;
+					margin-bottom: 15%;
+					article {
+						margin-bottom: 20%;
+						.pic {
+							width: 100%;
+							height: 100%;
+						}
+						margin-left: 10px;
+						.member_text {
+							left: -10px;
+						}
+					}
+				}
+				article {
+					width: 280px;
+					height: 400px;
+
+					img {
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+			.team_title {
+				width: 100%;
+				height: 50px;
+				left: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-wrap: wrap;
+			}
+		}
+	}
+}
+
+// 모바일구역 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+// 모바일구역 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+// 모바일구역 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+// 모바일구역 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+@media screen and (max-width: 635px) {
+	.content {
+		.inner {
+			height: 6500px;
+			.byred_text {
+				font: 15px/2 "Faustina";
+				span {
+					font: 30px/1 "DM Serif Display";
+				}
+			}
+			.wrap {
+				.ceo {
+					margin-bottom: 20%;
+				}
+				.Planning {
+					height: 800px;
+					margin-bottom: 50%;
+					article {
+						margin-bottom: 20%;
+						.pic {
+							width: 100%;
+							height: 100%;
+						}
+						margin-left: 10px;
+						&:nth-of-type(1) {
+							margin-left: 0;
+						}
+						.member_text {
+							left: -10px;
+						}
+					}
+				}
+				.Design {
+					height: 30%;
+					display: flex;
+					justify-content: center;
+					flex-wrap: wrap;
+					margin-bottom: 20%;
+					article {
+						margin-bottom: 15%;
+						.pic {
+							width: 100%;
+							height: 100%;
+						}
+						margin-left: 10px;
+						.member_text {
+							left: -10px;
+						}
+					}
+				}
+				.marketing {
+					height: 30%;
+					display: flex;
+					justify-content: center;
+					flex-wrap: wrap;
+					margin-bottom: 15%;
+					article {
+						margin-bottom: 15%;
+						.pic {
+							width: 100%;
+							height: 100%;
+						}
+						margin-left: 10px;
+						.member_text {
+							left: -10px;
+						}
+					}
+				}
+				article {
+					width: 280px;
+					height: 400px;
+
+					img {
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.content {
+		.inner {
+			h1 {
+				font-size: 50px;
+				margin-top: 10%;
+				margin-bottom: 10%;
+			}
+			height: 6100px;
+			.byred_text {
+				font: 13px/2 "Faustina";
+				span {
+					font: 20px/1 "DM Serif Display";
+				}
+			}
+		}
+	}
+}
