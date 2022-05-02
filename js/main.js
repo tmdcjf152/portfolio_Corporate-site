@@ -1,7 +1,7 @@
-const btnCall = document.querySelector(".btnCall"); 
-const menuMo = document.querySelector(".menuMo"); 
+const btnCall = document.querySelector(".btnCall");
+const menuMo = document.querySelector(".menuMo");
 
-btnCall.addEventListener("click",(e)=>{
+btnCall.addEventListener("click", (e) => {
     e.preventDefault();
 
     let isOn = btnCall.classList.contains("on");

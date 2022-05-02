@@ -2410,51 +2410,69 @@ main .content .inner .faq .faq-item .faq-item-body .faq-item-body-content {
 .join .inner .table table td input[type=text],
 .join .inner .table table td input[type=password],
 .join .inner .table table td input[type=email] {
-  width: 35%;
+  width: 50%;
   height: 30px;
-  background: rgba(255, 255, 255, 0.164);
+  background: none;
   padding: 10px;
-  border: 1px solid rgb(20, 1, 73);
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border: none;
+  border-bottom: 1px solid #000;
 }
 .join .inner .table table td input[type=tel] {
-  width: 19.5%;
+  width: 30%;
   height: 30px;
-  background: #fff;
+  background: none;
   padding: 10px;
-  border: 1px solid rgb(20, 1, 73);
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border: none;
+  border-bottom: 1px solid #000;
 }
 .join .inner .table table td select {
-  width: 15%;
+  width: 20%;
   height: 30px;
-  background: #fff;
+  height: 30px;
+  background: none;
   padding: 0px;
-  border: 1px solid rgb(20, 1, 73);
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border: none;
+  border-bottom: 1px solid #000;
 }
 
 @media screen and (max-width: 999px) {
+  .join {
+    width: 100%;
+    padding: 150px 0;
+  }
   .join .inner {
     width: 100%;
+    margin: 0 auto;
+  }
+  .join .inner h1 {
+    font: 40px/1 "DM Serif Display";
+    color: rgb(20, 1, 73);
+    text-align: center;
+    margin-bottom: 50px;
   }
   .join .inner img {
     width: 100%;
-    margin-left: 0%;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
   }
-  .join .inner h1 {
+  .join .inner .table {
     width: 100%;
   }
-  .join .inner table th,
-.join .inner table td {
+  .join .inner .table table {
+    width: 100%;
+  }
+  .join .inner .table table th,
+.join .inner .table table td {
+    width: 100%;
     padding: 20px 25px;
   }
-  .join .inner table th {
+  .join .inner .table table th {
     width: 20%;
     font: 20px/1 "Faustina";
   }
-  .join .inner table th input[type=reset],
-.join .inner table th input[type=submit] {
+  .join .inner .table table th input[type=reset],
+.join .inner .table table th input[type=submit] {
     position: relative;
     left: 5%;
     width: 25%;
@@ -2467,46 +2485,37 @@ main .content .inner .faq .faq-item .faq-item-body .faq-item-body-content {
     cursor: pointer;
     transition: 0.5s;
   }
-  .join .inner table th input[type=reset]:hover,
-.join .inner table th input[type=submit]:hover {
+  .join .inner .table table th input[type=reset]:hover,
+.join .inner .table table th input[type=submit]:hover {
     background: rgb(20, 1, 73);
     color: #fff;
   }
-  .join .inner table td input[type=text],
-.join .inner table td input[type=password],
-.join .inner table td input[type=email] {
-    width: 35%;
+  .join .inner .table table td input[type=text],
+.join .inner .table table td input[type=password],
+.join .inner .table table td input[type=email] {
+    width: 50%;
     height: 30px;
-    background: rgba(255, 255, 255, 0.164);
+    background: none;
     padding: 10px;
-    border: 1px solid rgb(20, 1, 73);
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-bottom: 1px solid #000;
   }
-  .join .inner table td input[type=tel] {
-    width: 19.5%;
+  .join .inner .table table td input[type=tel] {
+    width: 30%;
     height: 30px;
-    background: #fff;
+    background: none;
     padding: 10px;
-    border: 1px solid rgb(20, 1, 73);
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-bottom: 1px solid #000;
   }
-  .join .inner table td select {
-    width: 15%;
+  .join .inner .table table td select {
+    width: 20%;
     height: 30px;
-    background: #fff;
+    height: 30px;
+    background: none;
     padding: 0px;
-    border: 1px solid rgb(20, 1, 73);
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-    position: relative;
-  }
-  .join .inner table td #text {
-    width: 800px;
-    height: 400px;
-    position: relative;
-    left: -10%;
-    text-align: left;
-    padding: 0 auto;
-    resize: none;
+    border: none;
+    border-bottom: 1px solid #000;
   }
 }
 .youtube h2 {
