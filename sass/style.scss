@@ -40,6 +40,17 @@ body {
 				}
 			}
 		}
-	}
+	
+	}	.btn_index{
+			display: block;
+			text-align: center;
+			width: 300px;
+			position: absolute;
+			top: 85%;
+			left: 40%;
+			font: bold 20px/1 $p;
+			color: $navy;
+			
+		}
 }
 

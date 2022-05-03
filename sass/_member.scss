@@ -16,20 +16,18 @@
 		}
 		.byred_text {
 			height: 400px;
-			font: 25px/2 "Faustina";
+			font: 20px/2 "Faustina";
 			margin-bottom: 200px;
+			padding: 50px;
 			color: #fff;
 			background: $navy;
 			border-radius: 50%;
-			span {
+			h2 {
 				font: 50px/1 "DM Serif Display";
-				position: relative;
-				top: 0px;
+				margin-top: 20px;
 			}
 			p {
-				position: relative;
-				top: 30px;
-				padding: 40px;
+				padding: 0px 40px;
 			}
 		}
 		.wrap {
