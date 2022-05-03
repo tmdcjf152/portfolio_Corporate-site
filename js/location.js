@@ -19,7 +19,7 @@ var markerOptions = [
     {
         title: "the head shop",
         latlng: new kakao.maps.LatLng(37.523122, 127.035669),
-        imgSrc: 'img/maker.png',
+        imgSrc: 'img/marker.png',
         imgSize: new kakao.maps.Size(232, 99),
         imgPos: { offset: new kakao.maps.Point(116, 99) },
         button: branch_btns[0]
@@ -27,7 +27,7 @@ var markerOptions = [
     {
         title: "Galleria Department Store",
         latlng: new kakao.maps.LatLng(37.528365, 127.040106),
-        imgSrc: 'img/maker.png',
+        imgSrc: 'img/marker.png',
         imgSize: new kakao.maps.Size(232, 99),
         imgPos: { offset: new kakao.maps.Point(116, 99) },
         button: branch_btns[1]
@@ -35,7 +35,7 @@ var markerOptions = [
     {
         title: "Lotte World Tower",
         latlng: new kakao.maps.LatLng(37.512534, 127.102394),
-        imgSrc: 'img/maker.png',
+        imgSrc: 'img/marker.png',
         imgSize: new kakao.maps.Size(232, 99),
         imgPos: { offset: new kakao.maps.Point(116, 99) },
         button: branch_btns[2]

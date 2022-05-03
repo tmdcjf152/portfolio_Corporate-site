@@ -176,9 +176,5 @@ function isoLayout() {
     loading.classList.add("off"); 
     frame.classList.add("on"); 
 
-    new Isotope("#list",{
-        itemSelector : ".item", 
-        columnWidth : ".item", 
-        transitionDuration : "0.5s"
-    })
+
 }

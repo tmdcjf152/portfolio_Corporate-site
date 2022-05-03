@@ -196,7 +196,7 @@ body #header .inner .btnCall.on span {
 }
 body #visure {
   width: 100%;
-  height: 800px;
+  height: 950px;
   overflow: hidden;
   position: relative;
   top: -120px;
@@ -2779,6 +2779,10 @@ main .content .inner .faq .faq-item .faq-item-body .faq-item-body-content {
     cursor: pointer;
   }
 }
+h2 {
+  font: bold 50px/1 "DM Serif Display";
+}
+
 #gallery #searchBox {
   width: 100%;
   padding: 50px;
@@ -2807,8 +2811,8 @@ main .content .inner .faq .faq-item .faq-item-body .faq-item-body-content {
 }
 #gallery #wrap .loading {
   width: 100px;
-  position: fixed;
-  top: 50%;
+  position: absolute;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: 1s;
