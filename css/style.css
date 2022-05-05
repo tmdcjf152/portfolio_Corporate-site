@@ -1458,16 +1458,19 @@ body #footer .inner .contact .copy {
   margin-bottom: 200px;
   margin-top: 200px;
 }
+.content .inner h2 {
+  font: bold 30px/1 "Faustina";
+}
 .content .inner .byred_text {
   height: 400px;
-  font: 20px/2 "Faustina";
+  font: 18px/2 "Faustina";
   margin-bottom: 200px;
   padding: 50px;
   color: #fff;
   background: rgb(20, 1, 73);
   border-radius: 50%;
 }
-.content .inner .byred_text h2 {
+.content .inner .byred_text .byredo_title {
   font: 50px/1 "DM Serif Display";
   margin-top: 20px;
 }
@@ -2877,9 +2880,6 @@ h2 {
 }
 #gallery #wrap #list li div:hover a > img {
   filter: grayscale(0%);
-}
-#gallery #wrap #list li:hover {
-  transform: rotateY(360deg);
 }
 
 aside {

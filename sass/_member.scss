@@ -14,15 +14,18 @@
 			margin-bottom: 200px;
 			margin-top: 200px;
 		}
+		h2{
+			font: bold 30px/1 $p;
+		}
 		.byred_text {
 			height: 400px;
-			font: 20px/2 "Faustina";
+			font: 18px/2 "Faustina";
 			margin-bottom: 200px;
 			padding: 50px;
 			color: #fff;
 			background: $navy;
 			border-radius: 50%;
-			h2 {
+			.byredo_title {
 				font: 50px/1 "DM Serif Display";
 				margin-top: 20px;
 			}
